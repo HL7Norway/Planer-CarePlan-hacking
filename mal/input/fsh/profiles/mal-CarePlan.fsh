@@ -14,7 +14,11 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * period MS
 * subject 1..1
 * subject only Reference(MalPatient)
+* extension contains MalCarePlanPatientZone named patientZone 0..1 MS
+* extension[patientZone] ^short = "Pasientens vurderingssone i planen (grønn/gul/rød)"
 * goal MS
 * supportingInfo MS
 * supportingInfo only Reference(MalObservationBlood or Observation)
 * activity.outcomeReference only Reference(MalObservationBlood or Observation)
+* note MS
+* note ^short = "Fritekstbeskrivelse av pasientens sonevurdering og kontekst"
