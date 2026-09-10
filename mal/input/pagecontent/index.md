@@ -45,6 +45,16 @@ For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standa
 
 Dette gir en enkel og entydig måte å representere soner for evaluering av én type observasjon i en plan, og kan kobles direkte til aktivitet- og måloppfølging i `CarePlan`.
 
+#### Sonebeskrivelse for pasient i CarePlan
+
+I tillegg beskriver `MalCarePlan` hvordan pasientens sone kan uttrykkes direkte i planen:
+
+- `CarePlan.extension[patientZone]` bruker extension `MalCarePlanPatientZone`.
+- Extension-verdien er en `CodeableConcept` bundet til sonene `green`, `yellow` og `red`.
+- `CarePlan.note` brukes til fri tekst som forklarer hvorfor pasienten ligger i valgt sone og hva som bør følges opp.
+
+Skjemaet gir dermed både strukturert sonenivå for maskinell bruk og lesbar begrunnelse for klinisk oppfølging.
+
 ### Figur
 
 Eksempel på en figur laget med PlantUML.
