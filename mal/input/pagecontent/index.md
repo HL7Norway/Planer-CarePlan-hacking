@@ -26,10 +26,27 @@ Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hj
 
 Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR `Observation`-ressursen.
 
+### Kombinert forretnings- og applikasjonsbeskrivelse (xShare + Planer)
+
+Denne guiden kombinerer forretningsperspektivet og applikasjonsperspektivet fra xShare CarePlan:
+
+- **Forretning:** Pasient, helsepersonell, omsorgspersoner og organisasjon samhandler om en strukturert plan med mål, tiltak og oppfølging over tid.
+- **Applikasjon:** Pasient- og fagapplikasjoner henter, oppdaterer og deler planinnhold via journalsystemet som kilde for sannhet.
+
+Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer API, med fokus på maskinlesbar oppfølging av observasjoner i plan.
+
+#### Vurderingssoner for observasjoner (grønn/gul/rød)
+
+For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standardisert sonemodell i `Observation.interpretation`:
+
+- **Grønn sone (`green`)**: Forventet nivå, normal oppfølging.
+- **Gul sone (`yellow`)**: Avvik som krever økt oppfølging eller revurdering.
+- **Rød sone (`red`)**: Kritisk avvik som krever rask intervensjon.
+
+Dette gir en enkel og entydig måte å representere soner for evaluering av én type observasjon i en plan, og kan kobles direkte til aktivitet- og måloppfølging i `CarePlan`.
+
 ### Figur
 
 Eksempel på en figur laget med PlantUML.
 
 <img src="test.svg" width="40%" />
-
-

@@ -1,5 +1,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
+Alias: $mal-observation-severity-zone-cs = http://hl7.no/fhir/ig/mal/CodeSystem/mal-observation-severity-zone-cs
+Alias: $mal-observation-severity-zone-vs = http://hl7.no/fhir/ig/mal/ValueSet/mal-observation-severity-zone-vs
 // Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 // Alias: $kommunenummer-alle = https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
 // Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
