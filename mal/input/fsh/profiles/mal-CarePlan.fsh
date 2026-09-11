@@ -15,8 +15,13 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * subject 1..1
 * subject only Reference(MalPatient)
 * addresses MS
-* addresses only Reference(MalZoneCondition)
-* addresses ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
+* addresses only Reference(Condition)
+* addresses ^slicing.discriminator[0].type = #profile
+* addresses ^slicing.discriminator[0].path = "resolve()"
+* addresses ^slicing.rules = #open
+* addresses contains zoneDefinition 0..* MS
+* addresses[zoneDefinition] only Reference(MalZoneCondition)
+* addresses[zoneDefinition] ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
 * goal MS
 * supportingInfo MS
 * supportingInfo only Reference(MalObservationBlood)
@@ -32,6 +37,6 @@ Description: "Eksempelplan for Oddfrid med sone-definisjoner representert i Care
 * title = "Plan for Oddfrid"
 * description = "Oddfrid ønsker å kunna gå turar med barnebarna igjen."
 * subject = Reference(Pasient-1)
-* addresses[+] = Reference(ZoneCondition-Green-Oddfrid)
-* addresses[+] = Reference(ZoneCondition-Yellow-Oddfrid)
-* addresses[+] = Reference(ZoneCondition-Red-Oddfrid)
+* addresses[zoneDefinition][+] = Reference(ZoneCondition-Green-Oddfrid)
+* addresses[zoneDefinition][+] = Reference(ZoneCondition-Yellow-Oddfrid)
+* addresses[zoneDefinition][+] = Reference(ZoneCondition-Red-Oddfrid)
