@@ -17,15 +17,13 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * addresses MS
 * addresses only Reference(Condition)
 * addresses ^slicing.discriminator[0].type = #profile
-* addresses ^slicing.discriminator[0].path = "resolve()"
+* addresses ^slicing.discriminator[0].path = "$this.resolve()"
 * addresses ^slicing.rules = #open
 * addresses contains zoneDefinition 0..* MS
 * addresses[zoneDefinition] only Reference(MalZoneCondition)
 * addresses[zoneDefinition] ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
 * goal MS
 * supportingInfo MS
-* supportingInfo only Reference(MalObservationBlood)
-* activity.outcomeReference only Reference(MalObservationBlood)
 * note MS
 * note ^short = "Fritekst, for eksempel personlige mål eller supplerende planinformasjon"
 
