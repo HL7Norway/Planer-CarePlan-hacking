@@ -1,0 +1,573 @@
+{
+  "date" : "Fri, 11 Sep, 2026 07:29:03 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.planer-hacking.json",
+    "size" : 5016,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 50,
+      "length" : 12
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 51,
+      "length" : 10
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 54
+    },
+    {
+      "activity" : "validate",
+      "start" : 53,
+      "length" : 2152
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 76
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 66
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CarePlan-CarePlan-Oddfrid-Zones.json",
+    "size" : 639,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 51,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 389
+    },
+    {
+      "activity" : "validate",
+      "start" : 55,
+      "length" : 18
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-planer-hacking-observation-severity-zone-cs.json",
+    "size" : 933,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 7
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 51,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 214
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 55,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 57
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-ZoneCondition-Green-Oddfrid.json",
+    "size" : 763,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 57
+    },
+    {
+      "activity" : "validate",
+      "start" : 55,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-ZoneCondition-Red-Oddfrid.json",
+    "size" : 757,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 55,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-ZoneCondition-Yellow-Oddfrid.json",
+    "size" : 795,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 55,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-Pasient-1.json",
+    "size" : 1172,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 55,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 58,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-planer-hacking-careplan.json",
+    "size" : 2458,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 50,
+      "length" : 51
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 51,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 128
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 497
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 55,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 199
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 924
+    },
+    {
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 825
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 64,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 83,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-planer-hacking-observation-blodprove.json",
+    "size" : 2308,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 50,
+      "length" : 62
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 48
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 269
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 55,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 193
+    },
+    {
+      "activity" : "generate2",
+      "start" : 59,
+      "length" : 398
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 334
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-planer-hacking-patient.json",
+    "size" : 852,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 50,
+      "length" : 84
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 35
+    },
+    {
+      "activity" : "validate",
+      "start" : 53,
+      "length" : 473
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 55,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 235
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 667
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 508
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 11
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 83,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 83,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-planer-hacking-zone-condition.json",
+    "size" : 2897,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 50,
+      "length" : 35
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 52,
+      "length" : 28
+    },
+    {
+      "activity" : "validate",
+      "start" : 53,
+      "length" : 189
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 55,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 56,
+      "length" : 172
+    },
+    {
+      "activity" : "generate2",
+      "start" : 60,
+      "length" : 518
+    },
+    {
+      "activity" : "generate2",
+      "start" : 63,
+      "length" : 215
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 83,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-planer-hacking-observation-severity-zone-vs.json",
+    "size" : 642,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 51,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 52,
+      "length" : 29
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 16
+    },
+    {
+      "activity" : "generate1",
+      "start" : 57,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 59
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 68,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1089
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 846,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 3890
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/careplan-zones-model.svg",
+    "size" : 10415
+  },
+  {
+    "name" : "/input/images/careplan-zones-model.puml",
+    "size" : 818,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 6588
+  }]
+}

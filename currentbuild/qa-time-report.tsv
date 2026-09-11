@@ -1,0 +1,22 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.planer-hacking.json	5016	-	0	0	0	0	0	0	10	54	0	0	0	0	0	0	0	0	0	0	76	66	0	0	0	5	0	0
+fsh-generated/resources/CarePlan-CarePlan-Oddfrid-Zones.json	639	2	0	0	1	0	0	0	0	389	0	0	0	0	0	0	0	0	0	0	7	15	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-planer-hacking-observation-severity-zone-cs.json	933	1	0	0	0	0	0	0	1	10	0	0	1	0	0	0	0	0	0	0	9	57	0	0	0	0	0	0
+fsh-generated/resources/Condition-ZoneCondition-Green-Oddfrid.json	763	1	0	0	0	0	0	0	0	57	0	0	0	0	0	0	0	0	0	0	7	11	0	0	0	0	0	0
+fsh-generated/resources/Condition-ZoneCondition-Red-Oddfrid.json	757	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	7	6	0	0	0	0	0	0
+fsh-generated/resources/Condition-ZoneCondition-Yellow-Oddfrid.json	795	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	7	6	0	0	0	0	0	0
+fsh-generated/resources/Patient-Pasient-1.json	1172	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	12	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-planer-hacking-careplan.json	2458	2	0	51	0	0	0	0	1	128	0	0	0	0	0	0	0	2	0	0	199	924	0	1	0	10	0	1
+fsh-generated/resources/StructureDefinition-planer-hacking-observation-blodprove.json	2308	1	0	62	0	0	0	0	0	48	0	0	1	0	0	0	0	0	0	0	193	398	0	0	0	8	0	0
+fsh-generated/resources/StructureDefinition-planer-hacking-patient.json	852	1	0	84	0	0	0	0	0	35	0	0	0	0	0	0	0	2	0	0	235	667	0	0	0	11	1	1
+fsh-generated/resources/StructureDefinition-planer-hacking-zone-condition.json	2897	2	0	35	0	0	0	0	0	28	0	0	0	0	0	0	0	1	0	0	172	518	0	0	0	9	0	1
+fsh-generated/resources/ValueSet-planer-hacking-observation-severity-zone-vs.json	642	1	0	0	0	0	0	0	1	29	0	0	0	0	0	0	0	0	0	0	10	59	0	0	0	1	0	0
+/fsh-generated/includes/menu.xml	1089	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	846	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	3890	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/careplan-zones-model.svg	10415	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/careplan-zones-model.puml	818	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	6588	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

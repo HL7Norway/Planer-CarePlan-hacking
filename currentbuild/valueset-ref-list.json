@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "PlanerHackingObservationSeverityZoneVS",
+    "title" : "Vurderingssone for observasjon (ValueSet)",
+    "description" : "Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød.",
+    "systems" : ["http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs"],
+    "uses" : {
+    },
+    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
+  }]
+}

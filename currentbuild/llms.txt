@@ -1,0 +1,35 @@
+# hl7.fhir.no.planer-hacking#0.2.0: Planer-CarePlan Hacking
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Vurderingssone for observasjon](CodeSystem-planer-hacking-observation-severity-zone-cs.md)
+
+### ValueSets
+
+* [Vurderingssone for observasjon (ValueSet)](ValueSet-planer-hacking-observation-severity-zone-vs.md)
+
+### Resource Profiles
+
+* [Plan](StructureDefinition-planer-hacking-careplan.md)
+* [Blodprøve](StructureDefinition-planer-hacking-observation-blodprove.md)
+* [Pasient](StructureDefinition-planer-hacking-patient.md)
+* [Sonebetingelse i plan](StructureDefinition-planer-hacking-zone-condition.md)
+
+### ImplementationGuides
+
+* [Planer-CarePlan Hacking](index.md)
+
+### Examples
+
+* [Plan for Oddfrid (CarePlan)](CarePlan-CarePlan-Oddfrid-Zones.md)
+* [ZoneCondition-Green-Oddfrid (Condition)](Condition-ZoneCondition-Green-Oddfrid.md)
+* [ZoneCondition-Red-Oddfrid (Condition)](Condition-ZoneCondition-Red-Oddfrid.md)
+* [ZoneCondition-Yellow-Oddfrid (Condition)](Condition-ZoneCondition-Yellow-Oddfrid.md)
+* [Pasient-1 (Patient)](Patient-Pasient-1.md)

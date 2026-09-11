@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="CarePlan-Oddfrid-Zones"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan CarePlan-Oddfrid-Zones</b></p><a name="CarePlan-Oddfrid-Zones"> </a><a name="hcCarePlan-Oddfrid-Zones"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-planer-hacking-careplan.html">Plan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Plan for Oddfrid</p><p><b>description</b>: Oddfrid ønsker å kunna gå turar med barnebarna igjen.</p><p><b>subject</b>: <a href="Patient-Pasient-1.html">Kari Elisabeth Hansen  Female, DoB: 1990-03-13 ( urn:oid:2.16.578.1.12.4.1.4.1#Foedselsnummer#13031353453)</a></p><p><b>addresses</b>: </p><ul><li><a href="Condition-ZoneCondition-Green-Oddfrid.html">Condition </a></li><li><a href="Condition-ZoneCondition-Yellow-Oddfrid.html">Condition </a></li><li><a href="Condition-ZoneCondition-Red-Oddfrid.html">Condition </a></li></ul></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <title value="Plan for Oddfrid"/>
+  <description value="Oddfrid ønsker å kunna gå turar med barnebarna igjen."/>
+  <subject>
+    <reference value="Patient/Pasient-1"/>
+  </subject>
+  <addresses>
+    <reference value="Condition/ZoneCondition-Green-Oddfrid"/>
+  </addresses>
+  <addresses>
+    <reference value="Condition/ZoneCondition-Yellow-Oddfrid"/>
+  </addresses>
+  <addresses>
+    <reference value="Condition/ZoneCondition-Red-Oddfrid"/>
+  </addresses>
+</CarePlan>
