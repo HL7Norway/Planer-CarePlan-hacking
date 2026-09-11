@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="diagram-title" aria-describedby="diagram-desc">
+  <title id="diagram-title">CarePlan sonemodell uten extension</title>
+  <desc id="diagram-desc">Diagrammet viser at CarePlan refererer sonebetingelser via addresses til MalZoneCondition, som inneholder clinicalStatus, sonenivå, terskeltekst og tiltakstekst for en pasient.</desc>
+  <style>
+    .title { font: bold 24px sans-serif; fill: #1f2937; }
+    .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 10; }
+    .head { font: bold 18px sans-serif; fill: #0f172a; }
+    .txt { font: 14px sans-serif; fill: #1e293b; }
+    .line { stroke: #475569; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+    </marker>
+  </defs>
+
+  <text x="40" y="42" class="title">CarePlan sonemodell uten extension</text>
+
+  <rect x="40" y="90" width="300" height="130" class="box"/>
+  <text x="60" y="122" class="head">MalCarePlan</text>
+  <text x="60" y="150" class="txt">title</text>
+  <text x="60" y="172" class="txt">description (personlige mål)</text>
+  <text x="60" y="194" class="txt">addresses -&gt; MalZoneCondition*</text>
+
+  <rect x="400" y="90" width="300" height="160" class="box"/>
+  <text x="420" y="122" class="head">MalZoneCondition</text>
+  <text x="420" y="150" class="txt">clinicalStatus: active</text>
+  <text x="420" y="172" class="txt">severity: green | yellow | red</text>
+  <text x="420" y="194" class="txt">code.text: observasjonsområde</text>
+  <text x="420" y="216" class="txt">note.text: anbefalt tiltak</text>
+  <text x="420" y="238" class="txt">subject -&gt; MalPatient</text>
+
+  <rect x="760" y="90" width="280" height="110" class="box"/>
+  <text x="780" y="122" class="head">MalPatient</text>
+  <text x="780" y="150" class="txt">identifier</text>
+  <text x="780" y="172" class="txt">name</text>
+
+  <rect x="400" y="310" width="420" height="170" class="box"/>
+  <text x="420" y="342" class="head">Eksempel (Oddfrid)</text>
+  <text x="420" y="370" class="txt">Green: condition "Peak flow &gt; 80%"</text>
+  <text x="420" y="392" class="txt">Yellow: condition "Peak flow 50-80%"</text>
+  <text x="420" y="414" class="txt">Red: condition "Peak flow &lt; 50%"</text>
+  <text x="420" y="436" class="txt">Action lagres i Condition.note.text</text>
+
+  <line x1="340" y1="155" x2="400" y2="155" class="line"/>
+  <line x1="700" y1="145" x2="760" y2="145" class="line"/>
+  <line x1="220" y1="220" x2="220" y2="265" class="line"/>
+  <line x1="220" y1="265" x2="400" y2="350" class="line"/>
+
+  <text x="60" y="525" class="txt">Pasientens planer modell: zone-level beskrives som Condition i CarePlan.addresses.</text>
+</svg>
