@@ -19,6 +19,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med niv√• (gr√
 * severity.coding contains zoneSystem 1..1 MS
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code from $mal-observation-severity-zone-vs (required)
+* severity.coding[zoneSystem].code 1..1
 * note 1..1 MS
 * note ^short = "Anbefalt tiltak for sonen"
 

@@ -14,7 +14,7 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * period MS
 * subject 1..1
 * subject only Reference(MalPatient)
-* addresses MS
+* addresses 1..* MS
 * addresses only Reference(MalZoneCondition)
 * addresses ^short = "Tilstander planen adresserer, inkludert sonebetingelser med observasjonsområder og tiltak"
 * goal MS

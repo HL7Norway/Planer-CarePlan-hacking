@@ -18,3 +18,4 @@ Description: "Profil for vanlige blodprøver"
 * interpretation.coding contains severityZone 0..1 MS
 * interpretation.coding[severityZone].system = $mal-observation-severity-zone-cs
 * interpretation.coding[severityZone].code from $mal-observation-severity-zone-vs (required)
+* interpretation.coding[severityZone].code 1..1
