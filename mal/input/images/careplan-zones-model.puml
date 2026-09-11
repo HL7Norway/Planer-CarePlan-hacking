@@ -28,8 +28,6 @@ class MalObservationBlood {
 MalCarePlan --> MalPatient : subject
 MalCarePlan --> "1..*" MalZoneCondition : addresses
 MalZoneCondition --> MalPatient : subject
-MalCarePlan ..> MalObservationBlood : supportingInfo
-MalCarePlan ..> MalObservationBlood : activity.outcomeReference
 
 note right of MalZoneCondition
 Eksempel:

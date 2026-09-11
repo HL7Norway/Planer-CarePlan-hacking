@@ -74,7 +74,7 @@ Et komplett eksempel er definert i FSH-instansene:
 - `ZoneCondition-Yellow-Oddfrid`
 - `ZoneCondition-Red-Oddfrid`
 
-Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `MalZoneCondition.code.text`, tiltak i `MalZoneCondition.note.text` og nivå i `MalZoneCondition.severity`, referert fra `CarePlan.addresses`.
+Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `MalZoneCondition.code.text`, tiltak i `MalZoneCondition.note.text` og nivå i `MalZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
 
 ### Figur
 

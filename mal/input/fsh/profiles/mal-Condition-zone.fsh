@@ -14,7 +14,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med niv√• (gr√
 * code.text 1..1
 * severity 1..1 MS
 * severity.coding 1..* MS
-* severity.coding ^slicing.discriminator[0].type = #value
+* severity.coding ^slicing.discriminator[0].type = #pattern
 * severity.coding ^slicing.discriminator[0].path = "system"
 * severity.coding ^slicing.rules = #open
 * severity.coding contains zoneSystem 1..1 MS
