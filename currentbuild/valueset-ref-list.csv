@@ -1,2 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
-http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs,0.2.1,draft,,PlanerHackingObservationSeverityZoneVS,Vurderingssone for observasjon (ValueSet),"Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød.","StructureDefinition/planer-hacking-zone-condition","Internal"
+http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs,0.3.0,draft,,PlanerHackingObservationSeverityZoneVS,Vurderingssone for observasjon (ValueSet),"Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød.","StructureDefinition/planer-hacking-v2-zone-condition,StructureDefinition/planer-hacking-zone-condition","Internal"

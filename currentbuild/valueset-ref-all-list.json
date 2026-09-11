@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
-    "version" : "0.2.1",
+    "version" : "0.3.0",
     "status" : "draft",
     "name" : "PlanerHackingObservationSeverityZoneVS",
     "title" : "Vurderingssone for observasjon (ValueSet)",
@@ -9,6 +9,7 @@
     "systems" : ["http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -37,8 +38,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan",
-    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve",
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
+    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -52,6 +54,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.145"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -66,6 +70,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.149"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -80,6 +86,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.146"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -94,6 +102,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.148"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -108,6 +118,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.150"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -122,6 +134,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.232"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -136,6 +150,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.162"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -150,6 +165,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.164"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -164,6 +180,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.161"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -178,6 +195,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.168"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -192,6 +210,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.170"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -206,6 +225,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.171"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -220,6 +240,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.166"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -276,10 +297,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan",
     "StructureDefinition-planer-hacking-patient.html" : "Pasient",
+    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve",
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan",
-    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve"
+    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -307,6 +331,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.169"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
   },
   {
@@ -336,6 +361,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.375"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -448,6 +475,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.427"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   },
   {
@@ -491,6 +520,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
+    "StructureDefinition-planer-hacking-v2-careplan.html" : "Plan (v2, overordnet)",
+    "StructureDefinition-planer-hacking-v2-zone-careplan.html" : "Sone-plan med tiltak (v2)",
     "StructureDefinition-planer-hacking-careplan.html" : "Plan"
   }]
 }

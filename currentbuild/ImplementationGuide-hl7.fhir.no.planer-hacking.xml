@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking"/>
-  <version value="0.2.1"/>
+  <version value="0.3.0"/>
   <name value="planerhacking"/>
   <title value="Planer CarePlan Hacking"/>
   <status value="draft"/>
-  <date value="2026-09-11T08:14:16+00:00"/>
+  <date value="2026-09-11T09:37:58+00:00"/>
   <publisher value="HL7 Norge"/>
   <contact>
     <name value="HL7 Norge"/>
@@ -502,6 +502,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/planer-hacking-v2-careplan"/>
+      </reference>
+      <name value="Plan (v2, overordnet)"/>
+      <description value="Overordnet CarePlan (v2) som samler tre sone-spesifikke CarePlaner (grønn/gul/rød). Sonene knyttes til denne planen via CarePlan.partOf på hver sone-plan, se PlanerHackingV2ZoneCarePlan."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CarePlan"/>
       </extension>
       <reference>
@@ -513,6 +524,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/CarePlan-Oddfrid-Zones-V2"/>
+      </reference>
+      <name value="Plan for Oddfrid (v2)"/>
+      <description value="Overordnet eksempelplan for Oddfrid (v2), med tre sone-CarePlaner som inneholder tiltak"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/planer-hacking-v2-zone-careplan"/>
+      </reference>
+      <name value="Sone-plan med tiltak (v2)"/>
+      <description value="CarePlan-profil (v2) for én sone. Adresserer sonens Condition og beskriver det anbefalte tiltaket for sonen i CarePlan.activity.detail.description, i stedet for i Condition.note slik som i v1-modellen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -521,6 +554,50 @@
       <name value="Sonebetingelse i plan"/>
       <description value="Condition-profil for sonegrenser i pasientens plan, med nivå (grønn/gul/rød), terskelbeskrivelse og anbefalt tiltak."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/planer-hacking-v2-zone-condition"/>
+      </reference>
+      <name value="Sonebetingelse i plan (v2)"/>
+      <description value="Condition-profil for sonegrenser i pasientens plan (v2), med nivå (grønn/gul/rød) og terskelbeskrivelse. Anbefalt tiltak beskrives i den tilhørende CarePlan sin activity, ikke her."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/CarePlan-Oddfrid-Green-V2"/>
+      </reference>
+      <name value="Tiltak - grønn sone"/>
+      <description value="Sone-plan (grønn) for Oddfrid med tiltak i activity.detail.description"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/CarePlan-Oddfrid-Yellow-V2"/>
+      </reference>
+      <name value="Tiltak - gul sone"/>
+      <description value="Sone-plan (gul) for Oddfrid med tiltak i activity.detail.description"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/CarePlan-Oddfrid-Red-V2"/>
+      </reference>
+      <name value="Tiltak - rød sone"/>
+      <description value="Sone-plan (rød) for Oddfrid med tiltak i activity.detail.description"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -560,6 +637,17 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
+        <reference value="Condition/ZoneCondition-Green-Oddfrid-V2"/>
+      </reference>
+      <name value="ZoneCondition-Green-Oddfrid-V2"/>
+      <description value="Grønn sone for Oddfrid (v2)"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
         <reference value="Condition/ZoneCondition-Red-Oddfrid"/>
       </reference>
       <name value="ZoneCondition-Red-Oddfrid"/>
@@ -571,11 +659,33 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
+        <reference value="Condition/ZoneCondition-Red-Oddfrid-V2"/>
+      </reference>
+      <name value="ZoneCondition-Red-Oddfrid-V2"/>
+      <description value="Rød sone for Oddfrid (v2)"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
         <reference value="Condition/ZoneCondition-Yellow-Oddfrid"/>
       </reference>
       <name value="ZoneCondition-Yellow-Oddfrid"/>
       <description value="Gul sone for Oddfrid"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ZoneCondition-Yellow-Oddfrid-V2"/>
+      </reference>
+      <name value="ZoneCondition-Yellow-Oddfrid-V2"/>
+      <description value="Gul sone for Oddfrid (v2)"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -590,6 +700,22 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="planer-CarePlan-v1.html"/>
+        </extension>
+        <nameUrl value="planer-CarePlan-v1.html"/>
+        <title value="Planer Care Plan v 1"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="planer-CarePlan-v2.html"/>
+        </extension>
+        <nameUrl value="planer-CarePlan-v2.html"/>
+        <title value="Planer Care Plan v 2"/>
         <generation value="markdown"/>
       </page>
     </page>

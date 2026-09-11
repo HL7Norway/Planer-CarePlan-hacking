@@ -1,4 +1,4 @@
-# Vurderingssone for observasjon (ValueSet) - Planer CarePlan Hacking v0.2.1
+# Vurderingssone for observasjon (ValueSet) - Planer CarePlan Hacking v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs | *Version*:0.2.1 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs | *Version*:0.3.0 |
 | Draft as of 2026-09-10 | *Computable Name*:PlanerHackingObservationSeverityZoneVS |
 
  
@@ -16,6 +16,7 @@ Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød.
 
  **References** 
 
+* [Sonebetingelse i plan (v2)](StructureDefinition-planer-hacking-v2-zone-condition.md)
 * [Sonebetingelse i plan](StructureDefinition-planer-hacking-zone-condition.md)
 
 ### Logical Definition (CLD)
@@ -46,7 +47,7 @@ Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød.
   "resourceType" : "ValueSet",
   "id" : "planer-hacking-observation-severity-zone-vs",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
-  "version" : "0.2.1",
+  "version" : "0.3.0",
   "name" : "PlanerHackingObservationSeverityZoneVS",
   "title" : "Vurderingssone for observasjon (ValueSet)",
   "status" : "draft",

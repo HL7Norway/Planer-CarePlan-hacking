@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.planer-hacking</b></p><a name=\"hl7.fhir.no.planer-hacking\"> </a><a name=\"hchl7.fhir.no.planer-hacking\"> </a><h2>planerhacking</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking</pre><div><p>Implementasjonsguide for hacking på CarePlan ressurser.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking"] ;
-  fhir:ImplementationGuide.version [ fhir:value "0.2.1"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.3.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "planerhacking"] ;
   fhir:ImplementationGuide.title [ fhir:value "Planer CarePlan Hacking"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-11T08:14:16+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-11T09:37:58+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Norge"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -752,6 +752,20 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/planer-hacking-v2-careplan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plan (v2, overordnet)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Overordnet CarePlan (v2) som samler tre sone-spesifikke CarePlaner (grønn/gul/rød). Sonene knyttes til denne planen via CarePlan.partOf på hver sone-plan, se PlanerHackingV2ZoneCarePlan." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "CarePlan" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -765,7 +779,38 @@
          fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan>
        ]
      ], [
-       fhir:index 5 ;
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/CarePlan/CarePlan-Oddfrid-Zones-V2> ;
+         fhir:Reference.reference [ fhir:value "CarePlan/CarePlan-Oddfrid-Zones-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plan for Oddfrid (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Overordnet eksempelplan for Oddfrid (v2), med tre sone-CarePlaner som inneholder tiltak" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan>
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/planer-hacking-v2-zone-careplan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sone-plan med tiltak (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CarePlan-profil (v2) for én sone. Adresserer sonens Condition og beskriver det anbefalte tiltaket for sonen i CarePlan.activity.detail.description, i stedet for i Condition.note slik som i v1-modellen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -779,7 +824,72 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condition-profil for sonegrenser i pasientens plan, med nivå (grønn/gul/rød), terskelbeskrivelse og anbefalt tiltak." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6 ;
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/planer-hacking-v2-zone-condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sonebetingelse i plan (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condition-profil for sonegrenser i pasientens plan (v2), med nivå (grønn/gul/rød) og terskelbeskrivelse. Anbefalt tiltak beskrives i den tilhørende CarePlan sin activity, ikke her." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/CarePlan/CarePlan-Oddfrid-Green-V2> ;
+         fhir:Reference.reference [ fhir:value "CarePlan/CarePlan-Oddfrid-Green-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tiltak - grønn sone" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sone-plan (grønn) for Oddfrid med tiltak i activity.detail.description" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan>
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/CarePlan/CarePlan-Oddfrid-Yellow-V2> ;
+         fhir:Reference.reference [ fhir:value "CarePlan/CarePlan-Oddfrid-Yellow-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tiltak - gul sone" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sone-plan (gul) for Oddfrid med tiltak i activity.detail.description" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan>
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/CarePlan/CarePlan-Oddfrid-Red-V2> ;
+         fhir:Reference.reference [ fhir:value "CarePlan/CarePlan-Oddfrid-Red-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tiltak - rød sone" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sone-plan (rød) for Oddfrid med tiltak i activity.detail.description" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan>
+       ]
+     ], [
+       fhir:index 13 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -793,7 +903,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kodeverk for tre nivåer av alvorlighetsgrad ved vurdering av observasjoner i planer." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7 ;
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -807,7 +917,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tillatte soner for alvorlighetsgrad i observasjonsvurdering: grønn, gul, rød." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -824,7 +934,24 @@
          fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition>
        ]
      ], [
-       fhir:index 9 ;
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/Condition/ZoneCondition-Green-Oddfrid-V2> ;
+         fhir:Reference.reference [ fhir:value "Condition/ZoneCondition-Green-Oddfrid-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ZoneCondition-Green-Oddfrid-V2" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grønn sone for Oddfrid (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition>
+       ]
+     ], [
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -841,7 +968,24 @@
          fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition>
        ]
      ], [
-       fhir:index 10 ;
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/Condition/ZoneCondition-Red-Oddfrid-V2> ;
+         fhir:Reference.reference [ fhir:value "Condition/ZoneCondition-Red-Oddfrid-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ZoneCondition-Red-Oddfrid-V2" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rød sone for Oddfrid (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition>
+       ]
+     ], [
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -856,6 +1000,23 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition" ;
          fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition>
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/Condition/ZoneCondition-Yellow-Oddfrid-V2> ;
+         fhir:Reference.reference [ fhir:value "Condition/ZoneCondition-Yellow-Oddfrid-V2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ZoneCondition-Yellow-Oddfrid-V2" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gul sone for Oddfrid (v2)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition" ;
+         fhir:link <http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition>
        ]
      ] ;
      fhir:ImplementationGuide.definition.page [
@@ -876,6 +1037,26 @@
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "planer-CarePlan-v1.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "planer-CarePlan-v1.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Planer Care Plan v 1" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "planer-CarePlan-v2.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "planer-CarePlan-v2.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Planer Care Plan v 2" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;

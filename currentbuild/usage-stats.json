@@ -1,14 +1,18 @@
 {
   "package": "hl7.fhir.no.planer-hacking",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [],
   "profiles": {
     "CarePlan": [
       {
-        "url": "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan",
-        "title": "Plan"
+        "url": "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan",
+        "title": "Plan (v2, overordnet)"
+      },
+      {
+        "url": "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan",
+        "title": "Sone-plan med tiltak (v2)"
       }
     ],
     "Observation": [
@@ -24,6 +28,10 @@
       }
     ],
     "Condition": [
+      {
+        "url": "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition",
+        "title": "Sonebetingelse i plan (v2)"
+      },
       {
         "url": "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition",
         "title": "Sonebetingelse i plan"
@@ -59,6 +67,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [

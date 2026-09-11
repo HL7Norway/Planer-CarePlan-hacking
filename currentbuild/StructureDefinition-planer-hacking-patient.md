@@ -1,4 +1,4 @@
-# Pasient - Planer CarePlan Hacking v0.2.1
+# Pasient - Planer CarePlan Hacking v0.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient | *Version*:0.2.1 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient | *Version*:0.3.0 |
 | Draft as of 2025-01-22 | *Computable Name*:PlanerHackingPatient |
 
  
@@ -16,7 +16,7 @@ Informasjon om pasienten, basert på no-basis.
 
 **Usages:**
 
-* Refer to this Profile: [Plan](StructureDefinition-planer-hacking-careplan.md), [Blodprøve](StructureDefinition-planer-hacking-observation-blodprove.md) and [Sonebetingelse i plan](StructureDefinition-planer-hacking-zone-condition.md)
+* Refer to this Profile: [Plan](StructureDefinition-planer-hacking-careplan.md), [Blodprøve](StructureDefinition-planer-hacking-observation-blodprove.md), [Plan (v2, overordnet)](StructureDefinition-planer-hacking-v2-careplan.md), [Sone-plan med tiltak (v2)](StructureDefinition-planer-hacking-v2-zone-careplan.md)... Show 2 more, [Sonebetingelse i plan (v2)](StructureDefinition-planer-hacking-v2-zone-condition.md) and [Sonebetingelse i plan](StructureDefinition-planer-hacking-zone-condition.md)
 * Examples for this Profile: [Patient/Pasient-1](Patient-Pasient-1.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.planer-hacking|current/StructureDefinition/StructureDefinition-planer-hacking-patient.json)
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-patie
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-patient",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient",
-  "version" : "0.2.1",
+  "version" : "0.3.0",
   "name" : "PlanerHackingPatient",
   "title" : "Pasient",
   "status" : "draft",

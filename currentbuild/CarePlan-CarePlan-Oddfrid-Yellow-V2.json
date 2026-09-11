@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "CarePlan-Oddfrid-Yellow-V2",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan CarePlan-Oddfrid-Yellow-V2</b></p><a name=\"CarePlan-Oddfrid-Yellow-V2\"> </a><a name=\"hcCarePlan-Oddfrid-Yellow-V2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-planer-hacking-v2-zone-careplan.html\">Sone-plan med tiltak (v2)</a></p></div><p><b>partOf</b>: <a href=\"CarePlan-CarePlan-Oddfrid-Zones-V2.html\">CarePlan Plan for Oddfrid (v2)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Tiltak - gul sone</p><p><b>subject</b>: <a href=\"Patient-Pasient-1.html\">Kari Elisabeth Hansen  Female, DoB: 1990-03-13 ( urn:oid:2.16.578.1.12.4.1.4.1#Foedselsnummer#13031353453)</a></p><p><b>addresses</b>: <a href=\"Condition-ZoneCondition-Yellow-Oddfrid-V2.html\">Condition </a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Not Started</td><td>Øk medikamentdose og kontakt fastlege innen 24 timer</td></tr></table></blockquote></div>"
+  },
+  "partOf" : [{
+    "reference" : "CarePlan/CarePlan-Oddfrid-Zones-V2"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "title" : "Tiltak - gul sone",
+  "subject" : {
+    "reference" : "Patient/Pasient-1"
+  },
+  "addresses" : [{
+    "reference" : "Condition/ZoneCondition-Yellow-Oddfrid-V2"
+  }],
+  "activity" : [{
+    "detail" : {
+      "status" : "not-started",
+      "description" : "Øk medikamentdose og kontakt fastlege innen 24 timer"
+    }
+  }]
+}

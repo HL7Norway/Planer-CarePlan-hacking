@@ -1,4 +1,4 @@
-# Home - Planer CarePlan Hacking v0.2.1
+# Home - Planer CarePlan Hacking v0.3.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.2.1 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.3.0 |
 | Draft as of 2026-09-11 | *Computable Name*:planerhacking |
 
 ### Tittel
@@ -47,47 +47,6 @@ Denne guiden kombinerer forretningsperspektivet og applikasjonsperspektivet fra 
 
 Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer API, med fokus på maskinlesbar oppfølging av observasjoner i plan.
 
-#### Vurderingssoner for observasjoner (grønn/gul/rød)
-
-For å støtte planoppfølging med tydelig alvorlighetsnivå brukes en tre-nivå sonemodell:
-
-* **Grønn sone (`green`)**: Forventet nivå, normal oppfølging.
-* **Gul sone (`yellow`)**: Avvik som krever økt oppfølging eller revurdering.
-* **Rød sone (`red`)**: Kritisk avvik som krever rask intervensjon.
-
-I denne guiden ligger **planens sonedefinisjoner** i `CarePlan.addresses` (via `PlanerHackingZoneCondition`), mens observasjoner kan uttrykke **målt status** separat ved behov.
-
-#### Sonebeskrivelse for pasient i CarePlan
-
-`PlanerHackingCarePlan` bruker ikke extension for soner. I stedet beskrives sonene som `Condition`-ressurser som refereres fra `CarePlan.addresses`. Dette uttrykker **planens definerte soner** (terskler og tiltak), ikke selve observasjonsmålingen:
-
-* `CarePlan.addresses` peker til `PlanerHackingZoneCondition`.
-* Hver `PlanerHackingZoneCondition` inneholder: 
-* `clinicalStatus` (obligatorisk)
-* `severity.coding[zoneSystem].system` = sonekodeverk (obligatorisk)
-* `severity.coding[zoneSystem].code` = sonenivå `green | yellow | red` (obligatorisk)
-* `code.text` = terskel/område (f.eks. "Peak flow 50-80%")
-* `note.text` = anbefalt tiltak for sonen
- 
-* `CarePlan.description`/`CarePlan.note` kan brukes for overordnet planinformasjon og personlige mål.
-
-Denne modellen gjør sone-definisjoner eksplisitte og gjenbrukbare i standard FHIR-struktur, uten egne CarePlan-extensions.
-
-#### PlantUML-modell for sonebeskrivelse
-
-Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak
-
-#### Eksempel (pasientplan med soner)
-
-Et komplett eksempel er definert i FSH-instansene:
-
-* `CarePlan-Oddfrid-Zones`
-* `ZoneCondition-Green-Oddfrid`
-* `ZoneCondition-Yellow-Oddfrid`
-* `ZoneCondition-Red-Oddfrid`
-
-Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `PlanerHackingZoneCondition.code.text`, tiltak i `PlanerHackingZoneCondition.note.text` og nivå i `PlanerHackingZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
-
 
 
 ## Resource Content
@@ -97,11 +56,11 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.no.planer-hacking",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking",
-  "version" : "0.2.1",
+  "version" : "0.3.0",
   "name" : "planerhacking",
   "title" : "Planer CarePlan Hacking",
   "status" : "draft",
-  "date" : "2026-09-11T08:14:16+00:00",
+  "date" : "2026-09-11T09:37:58+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -769,6 +728,22 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-planer-hacking-v2-careplan.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/planer-hacking-v2-careplan"
+      },
+      "name" : "Plan (v2, overordnet)",
+      "description" : "Overordnet CarePlan (v2) som samler tre sone-spesifikke CarePlaner (grønn/gul/rød). Sonene knyttes til denne planen via CarePlan.partOf på hver sone-plan, se PlanerHackingV2ZoneCarePlan.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CarePlan"
       },
       {
@@ -785,6 +760,38 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CarePlan-CarePlan-Oddfrid-Zones-V2.html"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/CarePlan-Oddfrid-Zones-V2"
+      },
+      "name" : "Plan for Oddfrid (v2)",
+      "description" : "Overordnet eksempelplan for Oddfrid (v2), med tre sone-CarePlaner som inneholder tiltak",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-planer-hacking-v2-zone-careplan.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/planer-hacking-v2-zone-careplan"
+      },
+      "name" : "Sone-plan med tiltak (v2)",
+      "description" : "CarePlan-profil (v2) for én sone. Adresserer sonens Condition og beskriver det anbefalte tiltaket for sonen i CarePlan.activity.detail.description, i stedet for i Condition.note slik som i v1-modellen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -797,6 +804,70 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
       "name" : "Sonebetingelse i plan",
       "description" : "Condition-profil for sonegrenser i pasientens plan, med nivå (grønn/gul/rød), terskelbeskrivelse og anbefalt tiltak.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-planer-hacking-v2-zone-condition.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/planer-hacking-v2-zone-condition"
+      },
+      "name" : "Sonebetingelse i plan (v2)",
+      "description" : "Condition-profil for sonegrenser i pasientens plan (v2), med nivå (grønn/gul/rød) og terskelbeskrivelse. Anbefalt tiltak beskrives i den tilhørende CarePlan sin activity, ikke her.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CarePlan-CarePlan-Oddfrid-Green-V2.html"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/CarePlan-Oddfrid-Green-V2"
+      },
+      "name" : "Tiltak - grønn sone",
+      "description" : "Sone-plan (grønn) for Oddfrid med tiltak i activity.detail.description",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CarePlan-CarePlan-Oddfrid-Yellow-V2.html"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/CarePlan-Oddfrid-Yellow-V2"
+      },
+      "name" : "Tiltak - gul sone",
+      "description" : "Sone-plan (gul) for Oddfrid med tiltak i activity.detail.description",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CarePlan-CarePlan-Oddfrid-Red-V2.html"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/CarePlan-Oddfrid-Red-V2"
+      },
+      "name" : "Tiltak - rød sone",
+      "description" : "Sone-plan (rød) for Oddfrid med tiltak i activity.detail.description",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan"
     },
     {
       "extension" : [{
@@ -853,6 +924,22 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-ZoneCondition-Green-Oddfrid-V2.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/ZoneCondition-Green-Oddfrid-V2"
+      },
+      "name" : "ZoneCondition-Green-Oddfrid-V2",
+      "description" : "Grønn sone for Oddfrid (v2)",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Condition-ZoneCondition-Red-Oddfrid.html"
       }],
       "reference" : {
@@ -869,6 +956,22 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-ZoneCondition-Red-Oddfrid-V2.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/ZoneCondition-Red-Oddfrid-V2"
+      },
+      "name" : "ZoneCondition-Red-Oddfrid-V2",
+      "description" : "Rød sone for Oddfrid (v2)",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Condition-ZoneCondition-Yellow-Oddfrid.html"
       }],
       "reference" : {
@@ -877,6 +980,22 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
       "name" : "ZoneCondition-Yellow-Oddfrid",
       "description" : "Gul sone for Oddfrid",
       "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-ZoneCondition-Yellow-Oddfrid-V2.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/ZoneCondition-Yellow-Oddfrid-V2"
+      },
+      "name" : "ZoneCondition-Yellow-Oddfrid-V2",
+      "description" : "Gul sone for Oddfrid (v2)",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"
     }],
     "page" : {
       "extension" : [{
@@ -893,6 +1012,24 @@ Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modellere
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "planer-CarePlan-v1.html"
+        }],
+        "nameUrl" : "planer-CarePlan-v1.html",
+        "title" : "Planer Care Plan v 1",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "planer-CarePlan-v2.html"
+        }],
+        "nameUrl" : "planer-CarePlan-v2.html",
+        "title" : "Planer Care Plan v 2",
         "generation" : "markdown"
       }]
     },

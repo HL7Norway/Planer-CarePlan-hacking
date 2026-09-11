@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ZoneCondition-Red-Oddfrid-V2",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ZoneCondition-Red-Oddfrid-V2</b></p><a name=\"ZoneCondition-Red-Oddfrid-V2\"> </a><a name=\"hcZoneCondition-Red-Oddfrid-V2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-planer-hacking-v2-zone-condition.html\">Sonebetingelse i plan (v2)</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>severity</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs red}\">Rød sone</span></p><p><b>code</b>: <span title=\"Codes:\">Peak flow under 50 prosent</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-1.html\">Kari Elisabeth Hansen  Female, DoB: 1990-03-13 ( urn:oid:2.16.578.1.12.4.1.4.1#Foedselsnummer#13031353453)</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "severity" : {
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs",
+      "code" : "red"
+    }]
+  },
+  "code" : {
+    "text" : "Peak flow under 50 prosent"
+  },
+  "subject" : {
+    "reference" : "Patient/Pasient-1"
+  }
+}

@@ -1,9 +1,11 @@
-# hl7.fhir.no.planer-hacking#0.2.1: Planer CarePlan Hacking
+# hl7.fhir.no.planer-hacking#0.3.0: Planer CarePlan Hacking
 
 ## Pages
 
 * [Home](index.md)
+* [Planer Care Plan v 1](planer-CarePlan-v1.md)
 * [Artifacts Summary](artifacts.md)
+* [Planer Care Plan v 2](planer-CarePlan-v2.md)
 
 ## Resources
 
@@ -20,6 +22,9 @@
 * [Plan](StructureDefinition-planer-hacking-careplan.md)
 * [Blodprøve](StructureDefinition-planer-hacking-observation-blodprove.md)
 * [Pasient](StructureDefinition-planer-hacking-patient.md)
+* [Plan (v2, overordnet)](StructureDefinition-planer-hacking-v2-careplan.md)
+* [Sone-plan med tiltak (v2)](StructureDefinition-planer-hacking-v2-zone-careplan.md)
+* [Sonebetingelse i plan (v2)](StructureDefinition-planer-hacking-v2-zone-condition.md)
 * [Sonebetingelse i plan](StructureDefinition-planer-hacking-zone-condition.md)
 
 ### ImplementationGuides
@@ -28,8 +33,15 @@
 
 ### Examples
 
+* [Tiltak - grønn sone (CarePlan)](CarePlan-CarePlan-Oddfrid-Green-V2.md)
+* [Tiltak - rød sone (CarePlan)](CarePlan-CarePlan-Oddfrid-Red-V2.md)
+* [Tiltak - gul sone (CarePlan)](CarePlan-CarePlan-Oddfrid-Yellow-V2.md)
+* [Plan for Oddfrid (v2) (CarePlan)](CarePlan-CarePlan-Oddfrid-Zones-V2.md)
 * [Plan for Oddfrid (CarePlan)](CarePlan-CarePlan-Oddfrid-Zones.md)
+* [ZoneCondition-Green-Oddfrid-V2 (Condition)](Condition-ZoneCondition-Green-Oddfrid-V2.md)
 * [ZoneCondition-Green-Oddfrid (Condition)](Condition-ZoneCondition-Green-Oddfrid.md)
+* [ZoneCondition-Red-Oddfrid-V2 (Condition)](Condition-ZoneCondition-Red-Oddfrid-V2.md)
 * [ZoneCondition-Red-Oddfrid (Condition)](Condition-ZoneCondition-Red-Oddfrid.md)
+* [ZoneCondition-Yellow-Oddfrid-V2 (Condition)](Condition-ZoneCondition-Yellow-Oddfrid-V2.md)
 * [ZoneCondition-Yellow-Oddfrid (Condition)](Condition-ZoneCondition-Yellow-Oddfrid.md)
 * [Pasient-1 (Patient)](Patient-Pasient-1.md)

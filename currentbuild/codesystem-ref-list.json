@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs",
-    "version" : "0.2.1",
+    "version" : "0.3.0",
     "status" : "draft",
     "name" : "PlanerHackingObservationSeverityZoneCS",
     "title" : "Vurderingssone for observasjon",
