@@ -9,6 +9,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med niv√• (gr√
 
 * subject 1..1
 * subject only Reference(MalPatient)
+* clinicalStatus 1..1 MS
 * code 1..1 MS
 * severity 1..1 MS
 * severity.coding 1..* MS
