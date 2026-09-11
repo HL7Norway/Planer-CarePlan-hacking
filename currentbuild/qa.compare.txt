@@ -4,7 +4,7 @@ planerhacking : Validation Results
 err = 3, warn = 16, info = 19
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.planer-hacking#$-- (canonical = http://hl7.no/fhir/ig/planer-hacking)
- Build Errors : 2 / 5 / 0
+ Build Errors : 0 / 5 / 0
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/CarePlan-CarePlan-Oddfrid-Zones : 0 / 0 / 1
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/CodeSystem-planer-hacking-observation-severity-zone-cs : 2 / 1 / 3
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/Condition-ZoneCondition-Green-Oddfrid : 0 / 0 / 2
@@ -19,8 +19,6 @@ Generated $--. FHIR version $-- for hl7.fhir.no.planer-hacking#$-- (canonical = 
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/ValueSet-planer-hacking-observation-severity-zone-vs : 1 / 1 / 2
 </table>
 == n/a ==
-ERROR: index.html#/html/body/div/div/div/div/div/p/img at Line 286, column 5: The image source 'images/careplan-zones-model.svg' cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/p/img at Line 305, column 5: The image source 'test.svg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

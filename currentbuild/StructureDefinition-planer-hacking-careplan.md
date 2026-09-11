@@ -1,4 +1,4 @@
-# Plan - Planer-CarePlan Hacking v0.2.0
+# Plan - Planer CarePlan Hacking v0.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan | *Version*:0.2.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan | *Version*:0.2.1 |
 | Draft as of 2026-09-10 | *Computable Name*:PlanerHackingCarePlan |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-carep
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-careplan",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "PlanerHackingCarePlan",
   "title" : "Plan",
   "status" : "draft",

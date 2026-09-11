@@ -1,4 +1,4 @@
-# Sonebetingelse i plan - Planer-CarePlan Hacking v0.2.0
+# Sonebetingelse i plan - Planer CarePlan Hacking v0.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition | *Version*:0.2.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition | *Version*:0.2.1 |
 | Draft as of 2026-09-11 | *Computable Name*:PlanerHackingZoneCondition |
 
  
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-zone-
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-zone-condition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "PlanerHackingZoneCondition",
   "title" : "Sonebetingelse i plan",
   "status" : "draft",

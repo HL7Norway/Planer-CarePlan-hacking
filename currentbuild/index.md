@@ -1,4 +1,4 @@
-# Home - Planer-CarePlan Hacking v0.2.0
+# Home - Planer CarePlan Hacking v0.2.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.2.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.2.1 |
 | Draft as of 2026-09-11 | *Computable Name*:planerhacking |
 
 ### Tittel
@@ -75,7 +75,7 @@ Denne modellen gjør sone-definisjoner eksplisitte og gjenbrukbare i standard FH
 
 #### PlantUML-modell for sonebeskrivelse
 
-![](images/careplan-zones-model.svg)
+Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak
 
 #### Eksempel (pasientplan med soner)
 
@@ -88,12 +88,6 @@ Et komplett eksempel er definert i FSH-instansene:
 
 Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `PlanerHackingZoneCondition.code.text`, tiltak i `PlanerHackingZoneCondition.note.text` og nivå i `PlanerHackingZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
 
-### Figur
-
-Eksempel på en figur laget med PlantUML.
-
-![](test.svg)
-
 
 
 ## Resource Content
@@ -103,11 +97,11 @@ Eksempel på en figur laget med PlantUML.
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.no.planer-hacking",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "planerhacking",
-  "title" : "Planer-CarePlan Hacking",
+  "title" : "Planer CarePlan Hacking",
   "status" : "draft",
-  "date" : "2026-09-11T07:29:03+00:00",
+  "date" : "2026-09-11T08:14:16+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",

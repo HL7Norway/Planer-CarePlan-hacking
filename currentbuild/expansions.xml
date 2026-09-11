@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9f7cc432-2213-402f-aa78-91472d442fa2"/>
+  <id value="454c9780-8b4e-4268-b599-9cf817ca315d"/>
   <meta>
-    <lastUpdated value="2026-09-11T07:29:03.946+00:00"/>
+    <lastUpdated value="2026-09-11T08:14:16.641+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-planer-hacking-observation-severity-zone-cs.html">codesystem Vurderingssone for observasjon v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-planer-hacking-observation-severity-zone-cs.html">codesystem Vurderingssone for observasjon v0.2.1 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs|0.2.1" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -54,12 +54,12 @@
                 <td>Forventet verdiområde, normal oppfølging.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;green&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.1&quot;, &quot;code&quot;: &quot;green&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;green&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.1&quot;&gt;&lt;code value=&quot;green&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75,12 +75,12 @@
                 <td>Avvik som krever økt oppfølging eller revurdering.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;yellow&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.1&quot;, &quot;code&quot;: &quot;yellow&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;yellow&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.1&quot;&gt;&lt;code value=&quot;yellow&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -96,12 +96,12 @@
                 <td>Kritisk avvik som krever rask intervensjon.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;red&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;, &quot;version&quot;: &quot;0.2.1&quot;, &quot;code&quot;: &quot;red&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;red&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs&quot;&gt;&lt;version value=&quot;0.2.1&quot;&gt;&lt;code value=&quot;red&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -109,7 +109,7 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs"/>
-        <version value="0.2.0"/>
+        <version value="0.2.1"/>
         <name value="PlanerHackingObservationSeverityZoneVS"/>
         <title value="Vurderingssone for observasjon (ValueSet)"/>
         <status value="draft"/>
@@ -122,8 +122,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d000d559-afb1-44e5-b9ec-0a5386e65cfa"/>
-          <timestamp value="2026-09-11T07:30:05+00:00"/>
+          <identifier value="urn:uuid:9f6f1474-3b27-43b5-be57-47da360cf5d5"/>
+          <timestamp value="2026-09-11T08:15:26+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -144,7 +144,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs|0.2.0"/>
+            <valueUri value="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs|0.2.1"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs"/>

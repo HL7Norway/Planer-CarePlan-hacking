@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
-    "version" : "0.2.0",
+    "version" : "0.2.1",
     "status" : "draft",
     "name" : "PlanerHackingObservationSeverityZoneVS",
     "title" : "Vurderingssone for observasjon (ValueSet)",
@@ -37,8 +37,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve",
-    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
+    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan",
+    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -276,10 +276,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve",
-    "StructureDefinition-planer-hacking-careplan.html" : "Plan",
     "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan",
-    "StructureDefinition-planer-hacking-patient.html" : "Pasient"
+    "StructureDefinition-planer-hacking-patient.html" : "Pasient",
+    "StructureDefinition-planer-hacking-careplan.html" : "Plan",
+    "StructureDefinition-planer-hacking-observation-blodprove.html" : "Blodprøve"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",

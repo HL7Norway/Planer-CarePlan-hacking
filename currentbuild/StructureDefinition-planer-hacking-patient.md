@@ -1,4 +1,4 @@
-# Pasient - Planer-CarePlan Hacking v0.2.0
+# Pasient - Planer CarePlan Hacking v0.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient | *Version*:0.2.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient | *Version*:0.2.1 |
 | Draft as of 2025-01-22 | *Computable Name*:PlanerHackingPatient |
 
  
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-patie
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-patient",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "PlanerHackingPatient",
   "title" : "Pasient",
   "status" : "draft",

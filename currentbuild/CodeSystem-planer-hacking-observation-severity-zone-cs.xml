@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem planer-hacking-observation-severity-zone-cs</b></p><a name="planer-hacking-observation-severity-zone-cs"> </a><a name="hcplaner-hacking-observation-severity-zone-cs"> </a><p>This  code system <code>http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">green<a name="planer-hacking-observation-severity-zone-cs-green"> </a></td><td>Grønn sone</td><td>Forventet verdiområde, normal oppfølging.</td></tr><tr><td style="white-space:nowrap">yellow<a name="planer-hacking-observation-severity-zone-cs-yellow"> </a></td><td>Gul sone</td><td>Avvik som krever økt oppfølging eller revurdering.</td></tr><tr><td style="white-space:nowrap">red<a name="planer-hacking-observation-severity-zone-cs-red"> </a></td><td>Rød sone</td><td>Kritisk avvik som krever rask intervensjon.</td></tr></table></div>
   </text>
   <url value="http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="PlanerHackingObservationSeverityZoneCS"/>
   <title value="Vurderingssone for observasjon"/>
   <status value="draft"/>
