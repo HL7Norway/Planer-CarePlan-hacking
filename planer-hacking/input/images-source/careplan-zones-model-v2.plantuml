@@ -2,14 +2,14 @@
 title CarePlan sonemodell v2 - tiltak i CarePlan.activity
 footer Pasientens planer: overordnet CarePlan -> sone-CarePlan (partOf) -> sone-Condition (addresses)
 
-class PlanerHackingPatient {
-  +identifier
-  +name
-}
-
 class PlanerHackingV2CarePlan {
   +title
   +description (personlige mål)
+}
+
+class PlanerHackingPatient {
+  +identifier
+  +name
 }
 
 class PlanerHackingV2ZoneCarePlan {
@@ -26,9 +26,9 @@ class PlanerHackingV2ZoneCondition {
   +code.text: observasjonsområde
 }
 
-PlanerHackingV2CarePlan --> PlanerHackingPatient : subject
+PlanerHackingV2CarePlan -down-> PlanerHackingPatient : subject
+PlanerHackingV2CarePlan <-right- PlanerHackingV2ZoneCarePlan : partOf
 PlanerHackingV2ZoneCarePlan --> PlanerHackingPatient : subject
-PlanerHackingV2ZoneCarePlan --> PlanerHackingV2CarePlan : partOf
 PlanerHackingV2ZoneCarePlan --> PlanerHackingV2ZoneCondition : addresses
 PlanerHackingV2ZoneCondition --> PlanerHackingPatient : subject
 
