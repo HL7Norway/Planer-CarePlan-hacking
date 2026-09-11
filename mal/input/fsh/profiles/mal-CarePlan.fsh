@@ -19,8 +19,8 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * addresses ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
 * goal MS
 * supportingInfo MS
-* supportingInfo only Reference(Observation)
-* activity.outcomeReference only Reference(Observation)
+* supportingInfo only Reference(MalObservationBlood)
+* activity.outcomeReference only Reference(MalObservationBlood)
 * note MS
 * note ^short = "Fritekst, for eksempel personlige mål eller supplerende planinformasjon"
 
