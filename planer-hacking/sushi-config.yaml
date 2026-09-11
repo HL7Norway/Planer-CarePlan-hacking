@@ -3,11 +3,11 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 # Oppdater med riktig informasjon
-id: hl7.fhir.no.mal
-canonical: http://hl7.no/fhir/ig/mal
-name: Mal
-title: "Mal"
-description: Implementasjonsguide for å TODO
+id: hl7.fhir.no.planer-hacking
+canonical: http://hl7.no/fhir/ig/planer-hacking
+name: planer-hacking
+title: "Planer-CarePlan Hacking"
+description: Implementasjonsguide for hacking på CarePlan ressurser.
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1

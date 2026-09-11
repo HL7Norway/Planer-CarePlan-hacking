@@ -1,5 +1,5 @@
-CodeSystem:  MalObservationSeverityZoneCS
-Id:          mal-observation-severity-zone-cs
+CodeSystem:  PlanerHackingObservationSeverityZoneCS
+Id:          planer-hacking-observation-severity-zone-cs
 Title:       "Vurderingssone for observasjon"
 Description: "Kodeverk for tre nivåer av alvorlighetsgrad ved vurdering av observasjoner i planer."
 * ^status = #draft

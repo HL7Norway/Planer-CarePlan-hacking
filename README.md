@@ -1,8 +1,8 @@
 ![Under utvikling!](https://img.shields.io/badge/Status-Under%20utvikling-orange)
-[![ig-gh-pages](https://github.com/HL7Norway/ig-mal/actions/workflows/ig-gh-pages.yml/badge.svg)](https://github.com/HL7Norway/ig-mal/actions/workflows/ig-gh-pages.yml)
-[![Validate FSH Files](https://github.com/HL7Norway/ig-mal/actions/workflows/validate-fsh.yml/badge.svg)](https://github.com/HL7Norway/ig-mal/actions/workflows/validate-fsh.yml)
+[![ig-gh-pages](https://github.com/HL7Norway/Planer-CarePlan-hacking/actions/workflows/ig-gh-pages.yml/badge.svg)](https://github.com/HL7Norway/Planer-CarePlan-hacking/actions/workflows/ig-gh-pages.yml)
+[![Validate FSH Files](https://github.com/HL7Norway/Planer-CarePlan-hacking/actions/workflows/validate-fsh.yml/badge.svg)](https://github.com/HL7Norway/Planer-CarePlan-hacking/actions/workflows/validate-fsh.yml)
 
-# Mal for implementasjonsguider (IG)
+# Planer-CarePlan Hacking
 
 Dette er en mal du kan bruke som utgangspunkt for en HL7 FHIR implementasjonsguide. Malen benytter FHIR Shorthand (FSH) for å definere profiler og GitHub Actions for automatisering, slik at all utvikling kan skje på GitHub.
 

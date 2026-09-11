@@ -1,5 +1,5 @@
-Profile:     MalCarePlan
-Id:          mal-careplan
+Profile:     PlanerHackingCarePlan
+Id:          planer-hacking-careplan
 Parent:      CarePlan
 Title:       "Plan"
 Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), tilpasset Planer API-behov for planinnhold."
@@ -13,17 +13,17 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * description MS
 * period MS
 * subject 1..1
-* subject only Reference(MalPatient)
+* subject only Reference(PlanerHackingPatient)
 * addresses 1..* MS
-* addresses only Reference(MalZoneCondition)
-* addresses ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
+* addresses only Reference(PlanerHackingZoneCondition)
+* addresses ^short = "Sonebetingelser for planen representeres som PlanerHackingZoneCondition"
 * goal MS
 * supportingInfo MS
 * note MS
 * note ^short = "Fritekst, for eksempel personlige mål eller supplerende planinformasjon"
 
 Instance: CarePlan-Oddfrid-Zones
-InstanceOf: MalCarePlan
+InstanceOf: PlanerHackingCarePlan
 Description: "Eksempelplan for Oddfrid med sone-definisjoner representert i CarePlan.addresses"
 * status = #active
 * intent = #plan

@@ -43,15 +43,15 @@ For å støtte planoppfølging med tydelig alvorlighetsnivå brukes en tre-nivå
 - **Gul sone (`yellow`)**: Avvik som krever økt oppfølging eller revurdering.
 - **Rød sone (`red`)**: Kritisk avvik som krever rask intervensjon.
 
-I denne guiden ligger **planens sonedefinisjoner** i `CarePlan.addresses` (via `MalZoneCondition`), mens observasjoner kan uttrykke **målt status** separat ved behov.
+I denne guiden ligger **planens sonedefinisjoner** i `CarePlan.addresses` (via `PlanerHackingZoneCondition`), mens observasjoner kan uttrykke **målt status** separat ved behov.
 
 #### Sonebeskrivelse for pasient i CarePlan
 
-`MalCarePlan` bruker ikke extension for soner. I stedet beskrives sonene som `Condition`-ressurser som refereres fra `CarePlan.addresses`.
+`PlanerHackingCarePlan` bruker ikke extension for soner. I stedet beskrives sonene som `Condition`-ressurser som refereres fra `CarePlan.addresses`.
 Dette uttrykker **planens definerte soner** (terskler og tiltak), ikke selve observasjonsmålingen:
 
-- `CarePlan.addresses` peker til `MalZoneCondition`.
-- Hver `MalZoneCondition` inneholder:
+- `CarePlan.addresses` peker til `PlanerHackingZoneCondition`.
+- Hver `PlanerHackingZoneCondition` inneholder:
   - `clinicalStatus` (obligatorisk)
   - `severity.coding[zoneSystem].system` = sonekodeverk (obligatorisk)
   - `severity.coding[zoneSystem].code` = sonenivå `green | yellow | red` (obligatorisk)
@@ -74,7 +74,7 @@ Et komplett eksempel er definert i FSH-instansene:
 - `ZoneCondition-Yellow-Oddfrid`
 - `ZoneCondition-Red-Oddfrid`
 
-Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `MalZoneCondition.code.text`, tiltak i `MalZoneCondition.note.text` og nivå i `MalZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
+Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `PlanerHackingZoneCondition.code.text`, tiltak i `PlanerHackingZoneCondition.note.text` og nivå i `PlanerHackingZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
 
 ### Figur
 

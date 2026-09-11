@@ -2,29 +2,29 @@
 title CarePlan sonemodell uten extension
 footer Pasientens planer: sone via CarePlan.addresses -> Condition
 
-class MalPatient {
+class PlanerHackingPatient {
   +identifier
   +name
 }
 
-class MalCarePlan {
+class PlanerHackingCarePlan {
   +title
   +description (personlige mål)
   +addresses[1..*]
 }
 
-class MalZoneCondition {
+class PlanerHackingZoneCondition {
   +clinicalStatus: active
   +severity: green|yellow|red
   +code.text: observasjonsområde
   +note.text: anbefalt tiltak
 }
 
-MalCarePlan --> MalPatient : subject
-MalCarePlan --> "1..*" MalZoneCondition : addresses
-MalZoneCondition --> MalPatient : subject
+PlanerHackingCarePlan --> PlanerHackingPatient : subject
+PlanerHackingCarePlan --> "1..*" PlanerHackingZoneCondition : addresses
+PlanerHackingZoneCondition --> PlanerHackingPatient : subject
 
-note right of MalZoneCondition
+note right of PlanerHackingZoneCondition
 Eksempel:
 - code.text = "Peak flow 50-80%"
 - severity.coding[zoneSystem].code = yellow
