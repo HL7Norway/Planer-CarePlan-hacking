@@ -11,7 +11,13 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med niv√• (gr√
 * subject only Reference(MalPatient)
 * code 1..1 MS
 * severity 1..1 MS
-* severity from $mal-observation-severity-zone-vs (required)
+* severity.coding 1..* MS
+* severity.coding ^slicing.discriminator[0].type = #value
+* severity.coding ^slicing.discriminator[0].path = "system"
+* severity.coding ^slicing.rules = #open
+* severity.coding contains zoneSystem 1..1 MS
+* severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
+* severity.coding[zoneSystem].code from $mal-observation-severity-zone-vs (required)
 * note 1..1 MS
 * note ^short = "Anbefalt tiltak for sonen"
 
