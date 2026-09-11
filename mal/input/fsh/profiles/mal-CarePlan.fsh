@@ -15,8 +15,8 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * subject 1..1
 * subject only Reference(MalPatient)
 * addresses MS
-* addresses only Reference(Condition)
-* addresses ^short = "Sonebetingelser for planen representeres som Condition, med MalZoneCondition som anbefalt profil"
+* addresses only Reference(MalZoneCondition)
+* addresses ^short = "Sonebetingelser for planen representeres som MalZoneCondition"
 * goal MS
 * supportingInfo MS
 * supportingInfo only Reference(Observation)

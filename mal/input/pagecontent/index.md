@@ -37,8 +37,8 @@ Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer AP
 
 #### Vurderingssoner for observasjoner (grønn/gul/rød)
 
-For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standardisert sonemodell i `Observation.interpretation`.
-Dette uttrykker **målt/observert sonestatus** for en konkret observasjon:
+For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standardisert sonemodell i `MalObservationBlood.interpretation`.
+Dette uttrykker **målt/observert sonestatus** for en konkret blodprøveobservasjon i denne guiden:
 
 - **Grønn sone (`green`)**: Forventet nivå, normal oppfølging.
 - **Gul sone (`yellow`)**: Avvik som krever økt oppfølging eller revurdering.

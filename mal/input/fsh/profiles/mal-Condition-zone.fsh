@@ -8,7 +8,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med niv√• (gr√
 * ^publisher = "HL7 Norge"
 
 * subject 1..1
-* subject only Reference(Patient)
+* subject only Reference(MalPatient)
 * clinicalStatus 1..1 MS
 * code 1..1 MS
 * code.text 1..1
