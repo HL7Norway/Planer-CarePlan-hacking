@@ -37,7 +37,8 @@ Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer AP
 
 #### Vurderingssoner for observasjoner (grønn/gul/rød)
 
-For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standardisert sonemodell i `Observation.interpretation`:
+For å støtte planoppfølging med tydelig alvorlighetsnivå innføres en standardisert sonemodell i `Observation.interpretation`.
+Dette uttrykker **målt/observert sonestatus** for en konkret observasjon:
 
 - **Grønn sone (`green`)**: Forventet nivå, normal oppfølging.
 - **Gul sone (`yellow`)**: Avvik som krever økt oppfølging eller revurdering.
@@ -48,13 +49,13 @@ Dette gir en enkel og entydig måte å representere soner for evaluering av én 
 #### Sonebeskrivelse for pasient i CarePlan
 
 `MalCarePlan` bruker ikke extension for soner. I stedet beskrives sonene som `Condition`-ressurser som refereres fra `CarePlan.addresses`.
+Dette uttrykker **planens definerte soner** (terskler og tiltak), ikke selve observasjonsmålingen:
 
 - `CarePlan.addresses` peker til `MalZoneCondition`.
 - Hver `MalZoneCondition` inneholder:
   - `clinicalStatus` (obligatorisk)
   - `severity.coding[zoneSystem].system` = sonekodeverk (obligatorisk)
-  - `severity` = `green | yellow | red`
-  - `severity.coding[zoneSystem].code` = sonenivå (obligatorisk)
+  - `severity.coding[zoneSystem].code` = sonenivå `green | yellow | red` (obligatorisk)
   - `code.text` = terskel/område (f.eks. "Peak flow 50-80%")
   - `note.text` = anbefalt tiltak for sonen
 - `CarePlan.description`/`CarePlan.note` kan brukes for overordnet planinformasjon og personlige mål.
