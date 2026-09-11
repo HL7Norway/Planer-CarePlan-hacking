@@ -1,0 +1,42 @@
+@startuml
+title CarePlan sonemodell v2 - tiltak i CarePlan.activity
+footer Pasientens planer: overordnet CarePlan -> sone-CarePlan (partOf) -> sone-Condition (addresses)
+
+class PlanerHackingPatient {
+  +identifier
+  +name
+}
+
+class PlanerHackingV2CarePlan {
+  +title
+  +description (personlige mål)
+}
+
+class PlanerHackingV2ZoneCarePlan {
+  +title
+  +partOf: overordnet CarePlan
+  +addresses: sone-Condition
+  +activity.detail.status
+  +activity.detail.description: anbefalt tiltak
+}
+
+class PlanerHackingV2ZoneCondition {
+  +clinicalStatus: active
+  +severity: green|yellow|red
+  +code.text: observasjonsområde
+}
+
+PlanerHackingV2CarePlan --> PlanerHackingPatient : subject
+PlanerHackingV2ZoneCarePlan --> PlanerHackingPatient : subject
+PlanerHackingV2ZoneCarePlan --> PlanerHackingV2CarePlan : partOf
+PlanerHackingV2ZoneCarePlan --> PlanerHackingV2ZoneCondition : addresses
+PlanerHackingV2ZoneCondition --> PlanerHackingPatient : subject
+
+note right of PlanerHackingV2ZoneCarePlan
+Eksempel (gul sone):
+- addresses -> code.text = "Peak flow 50-80%"
+- activity.detail.status = not-started
+- activity.detail.description = "Øk medikamentdose og kontakt fastlege"
+end note
+
+@enduml

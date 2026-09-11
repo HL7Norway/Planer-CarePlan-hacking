@@ -1,0 +1,64 @@
+@startuml
+title Eksempelinstanser (v2) - Oddfrid
+footer Objektdiagram over FSH-instansene i planer-hacking-v2-*.fsh
+
+object "Pasient-1\n:PlanerHackingPatient" as pasient {
+  name.family = Hansen
+}
+
+object "CarePlan-Oddfrid-Zones-V2\n:PlanerHackingV2CarePlan" as hovedplan {
+  title = "Plan for Oddfrid (v2)"
+  status = active
+}
+
+object "ZoneCondition-Green-Oddfrid-V2\n:PlanerHackingV2ZoneCondition" as gronnCondition {
+  severity = green
+  code.text = "Peak flow over 80 prosent"
+}
+
+object "CarePlan-Oddfrid-Green-V2\n:PlanerHackingV2ZoneCarePlan" as gronnPlan {
+  title = "Tiltak - grønn sone"
+  activity.detail.status = in-progress
+  activity.detail.description = "Fortsett nåværende behandling"
+}
+
+object "ZoneCondition-Yellow-Oddfrid-V2\n:PlanerHackingV2ZoneCondition" as gulCondition {
+  severity = yellow
+  code.text = "Peak flow mellom 50 og 80 prosent"
+}
+
+object "CarePlan-Oddfrid-Yellow-V2\n:PlanerHackingV2ZoneCarePlan" as gulPlan {
+  title = "Tiltak - gul sone"
+  activity.detail.status = not-started
+  activity.detail.description = "Øk medikamentdose og kontakt fastlege innen 24 timer"
+}
+
+object "ZoneCondition-Red-Oddfrid-V2\n:PlanerHackingV2ZoneCondition" as rodCondition {
+  severity = red
+  code.text = "Peak flow under 50 prosent"
+}
+
+object "CarePlan-Oddfrid-Red-V2\n:PlanerHackingV2ZoneCarePlan" as rodPlan {
+  title = "Tiltak - rød sone"
+  activity.detail.status = not-started
+  activity.detail.description = "Ring nødetatene umiddelbart"
+}
+
+hovedplan::subject --> pasient
+gronnPlan::subject --> pasient
+gulPlan::subject --> pasient
+rodPlan::subject --> pasient
+
+gronnPlan::partOf --> hovedplan
+gulPlan::partOf --> hovedplan
+rodPlan::partOf --> hovedplan
+
+gronnPlan::addresses --> gronnCondition
+gulPlan::addresses --> gulCondition
+rodPlan::addresses --> rodCondition
+
+gronnCondition::subject --> pasient
+gulCondition::subject --> pasient
+rodCondition::subject --> pasient
+
+@enduml
