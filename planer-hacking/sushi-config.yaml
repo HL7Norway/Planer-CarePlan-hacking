@@ -26,5 +26,8 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  CarePlan:
+    Careplan v1: planer-CarePlan-v1.html
+    CarePlan v2: planer-CarePlan-v2.html
   Artifacts: artifacts.html
   TOC: toc.html
