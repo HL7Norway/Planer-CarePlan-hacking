@@ -15,7 +15,7 @@ Description: "Profil for vanlige blodprøver"
 * interpretation.coding ^slicing.discriminator[0].type = #value
 * interpretation.coding ^slicing.discriminator[0].path = "system"
 * interpretation.coding ^slicing.rules = #open
-* interpretation.coding contains severityZone 0..1 MS
+* interpretation.coding contains severityZone 1..1 MS
 * interpretation.coding[severityZone].system = $mal-observation-severity-zone-cs
 * interpretation.coding[severityZone].code from $mal-observation-severity-zone-vs (required)
 * interpretation.coding[severityZone].code 1..1

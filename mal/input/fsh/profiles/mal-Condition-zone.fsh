@@ -8,9 +8,10 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med nivå (gr�
 * ^publisher = "HL7 Norge"
 
 * subject 1..1
-* subject only Reference(MalPatient)
+* subject only Reference(Patient)
 * clinicalStatus 1..1 MS
 * code 1..1 MS
+* code.text 1..1
 * severity 1..1 MS
 * severity.coding 1..* MS
 * severity.coding ^slicing.discriminator[0].type = #value
@@ -33,7 +34,7 @@ Description: "Grønn sone for Oddfrid"
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #green
 * code.text = "Peak flow over 80 prosent"
-* note.text = "Continue current treatment"
+* note.text = "Fortsett nåværende behandling"
 
 Instance: ZoneCondition-Yellow-Oddfrid
 InstanceOf: MalZoneCondition
@@ -44,7 +45,7 @@ Description: "Gul sone for Oddfrid"
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #yellow
 * code.text = "Peak flow mellom 50 og 80 prosent"
-* note.text = "Increase medication dosage and contact GP within 24 hours"
+* note.text = "Øk medikamentdose og kontakt fastlege innen 24 timer"
 
 Instance: ZoneCondition-Red-Oddfrid
 InstanceOf: MalZoneCondition
@@ -55,4 +56,4 @@ Description: "Rød sone for Oddfrid"
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #red
 * code.text = "Peak flow under 50 prosent"
-* note.text = "Call emergency services immediately"
+* note.text = "Ring nødetatene umiddelbart"
