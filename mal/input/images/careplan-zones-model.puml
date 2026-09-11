@@ -1,0 +1,39 @@
+@startuml
+title CarePlan sonemodell uten extension
+footer Pasientens planer: sone via CarePlan.addresses -> Condition
+
+class MalPatient {
+  +identifier
+  +name
+}
+
+class MalCarePlan {
+  +title
+  +description (personlige mål)
+  +addresses[1..*]
+}
+
+class MalZoneCondition {
+  +severity: green|yellow|red
+  +code.text: observasjonsområde
+  +note.text: anbefalt tiltak
+}
+
+class MalObservationBlood {
+  +valueQuantity
+  +interpretation: green|yellow|red
+}
+
+MalCarePlan --> MalPatient : subject
+MalCarePlan --> "1..*" MalZoneCondition : addresses
+MalZoneCondition --> MalPatient : subject
+MalCarePlan ..> MalObservationBlood : supportingInfo/outcomeReference
+
+note right of MalZoneCondition
+Eksempel:
+- code.text = "Peak flow 50-80%"
+- severity = yellow
+- note.text = "Increase medication dosage..."
+end note
+
+@enduml

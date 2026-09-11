@@ -47,13 +47,31 @@ Dette gir en enkel og entydig måte å representere soner for evaluering av én 
 
 #### Sonebeskrivelse for pasient i CarePlan
 
-I tillegg beskriver `MalCarePlan` hvordan pasientens sone kan uttrykkes direkte i planen:
+`MalCarePlan` bruker ikke extension for soner. I stedet beskrives sonene som `Condition`-ressurser som refereres fra `CarePlan.addresses`.
 
-- `CarePlan.extension[patientZone]` bruker extension `MalCarePlanPatientZone`.
-- Extension-verdien er en `CodeableConcept` bundet til sonene `green`, `yellow` og `red`.
-- `CarePlan.note` brukes til fri tekst som forklarer hvorfor pasienten ligger i valgt sone og hva som bør følges opp.
+- `CarePlan.addresses` peker til `MalZoneCondition`.
+- Hver `MalZoneCondition` inneholder:
+  - `severity` = `green | yellow | red`
+  - `code.text` = terskel/område (f.eks. "Peak flow 50-80%")
+  - `note.text` = anbefalt tiltak for sonen
+- `CarePlan.description`/`CarePlan.note` kan brukes for overordnet planinformasjon og personlige mål.
 
-Skjemaet gir dermed både strukturert sonenivå for maskinell bruk og lesbar begrunnelse for klinisk oppfølging.
+Denne modellen gjør sone-definisjoner eksplisitte og gjenbrukbare i standard FHIR-struktur, uten egne CarePlan-extensions.
+
+#### PlantUML-modell for sonebeskrivelse
+
+<img src="careplan-zones-model.svg" width="80%" />
+
+#### Eksempel (pasientplan med soner)
+
+Et komplett eksempel er definert i FSH-instansene:
+
+- `CarePlan-Oddfrid-Zones`
+- `ZoneCondition-Green-Oddfrid`
+- `ZoneCondition-Yellow-Oddfrid`
+- `ZoneCondition-Red-Oddfrid`
+
+Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone har terskel (`condition`), tiltak (`action`) og nivå (`level`), modellert som `Condition` i `CarePlan.addresses`.
 
 ### Figur
 

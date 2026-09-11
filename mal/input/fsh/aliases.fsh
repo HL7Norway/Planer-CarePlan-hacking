@@ -1,5 +1,6 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $mal-observation-severity-zone-cs = http://hl7.no/fhir/ig/mal/CodeSystem/mal-observation-severity-zone-cs
 Alias: $mal-observation-severity-zone-vs = http://hl7.no/fhir/ig/mal/ValueSet/mal-observation-severity-zone-vs
 // Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
