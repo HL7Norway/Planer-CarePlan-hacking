@@ -15,8 +15,8 @@ Description: "CarePlan-profil inspirert av xShare (forretning + applikasjon), ti
 * subject 1..1
 * subject only Reference(MalPatient)
 * addresses MS
-* addresses only Reference(MalZoneCondition)
-* addresses ^short = "Sonebetingelser som beskriver observasjonsområder og tiltak"
+* addresses only Reference(MalZoneCondition or Condition)
+* addresses ^short = "Tilstander planen adresserer, inkludert sonebetingelser med observasjonsområder og tiltak"
 * goal MS
 * supportingInfo MS
 * supportingInfo only Reference(MalObservationBlood or Observation)
@@ -32,6 +32,6 @@ Description: "Eksempelplan for Oddfrid med sone-definisjoner representert i Care
 * title = "Plan for Oddfrid"
 * description = "Oddfrid ønsker å kunna gå turar med barnebarna igjen."
 * subject = Reference(Pasient-1)
-* addresses[0] = Reference(ZoneCondition-Green-Oddfrid)
-* addresses[1] = Reference(ZoneCondition-Yellow-Oddfrid)
-* addresses[2] = Reference(ZoneCondition-Red-Oddfrid)
+* addresses[+] = Reference(ZoneCondition-Green-Oddfrid)
+* addresses[+] = Reference(ZoneCondition-Yellow-Oddfrid)
+* addresses[+] = Reference(ZoneCondition-Red-Oddfrid)
