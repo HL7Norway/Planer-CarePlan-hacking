@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560">
   <title>CarePlan sonemodell uten extension</title>
+  <desc>Diagrammet viser at CarePlan refererer sonebetingelser via addresses til MalZoneCondition, som inneholder clinicalStatus, sonenivå, terskeltekst og tiltakstekst for en pasient.</desc>
   <style>
     .title { font: bold 24px sans-serif; fill: #1f2937; }
     .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 10; }

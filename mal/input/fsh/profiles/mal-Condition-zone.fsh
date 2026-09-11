@@ -21,6 +21,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med nivå (gr�
 * severity.coding[zoneSystem].code from $mal-observation-severity-zone-vs (required)
 * severity.coding[zoneSystem].code 1..1
 * note 1..1 MS
+* note.text 1..1
 * note ^short = "Anbefalt tiltak for sonen"
 
 Instance: ZoneCondition-Green-Oddfrid
@@ -31,7 +32,7 @@ Description: "Grønn sone for Oddfrid"
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #green
-* code.text = "Peak flow > 80%"
+* code.text = "Peak flow over 80 prosent"
 * note.text = "Continue current treatment"
 
 Instance: ZoneCondition-Yellow-Oddfrid
@@ -42,7 +43,7 @@ Description: "Gul sone for Oddfrid"
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #yellow
-* code.text = "Peak flow 50-80%"
+* code.text = "Peak flow mellom 50 og 80 prosent"
 * note.text = "Increase medication dosage and contact GP within 24 hours"
 
 Instance: ZoneCondition-Red-Oddfrid
@@ -53,5 +54,5 @@ Description: "Rød sone for Oddfrid"
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #red
-* code.text = "Peak flow < 50%"
+* code.text = "Peak flow under 50 prosent"
 * note.text = "Call emergency services immediately"

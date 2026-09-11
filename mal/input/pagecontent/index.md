@@ -64,7 +64,7 @@ Denne modellen gjør sone-definisjoner eksplisitte og gjenbrukbare i standard FH
 
 #### PlantUML-modell for sonebeskrivelse
 
-<img src="careplan-zones-model.svg" alt="Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak" width="80%" />
+<img src="images/careplan-zones-model.svg" alt="Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak" width="80%" />
 
 #### Eksempel (pasientplan med soner)
 
