@@ -51,7 +51,10 @@ Dette gir en enkel og entydig måte å representere soner for evaluering av én 
 
 - `CarePlan.addresses` peker til `MalZoneCondition`.
 - Hver `MalZoneCondition` inneholder:
+  - `clinicalStatus` (obligatorisk)
+  - `severity.coding[zoneSystem].system` = sonekodeverk (obligatorisk)
   - `severity` = `green | yellow | red`
+  - `severity.coding[zoneSystem].code` = sonenivå (obligatorisk)
   - `code.text` = terskel/område (f.eks. "Peak flow 50-80%")
   - `note.text` = anbefalt tiltak for sonen
 - `CarePlan.description`/`CarePlan.note` kan brukes for overordnet planinformasjon og personlige mål.

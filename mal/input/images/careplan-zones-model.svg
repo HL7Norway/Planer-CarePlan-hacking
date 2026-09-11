@@ -23,10 +23,11 @@
 
   <rect x="400" y="90" width="300" height="160" class="box"/>
   <text x="420" y="122" class="head">MalZoneCondition</text>
-  <text x="420" y="150" class="txt">severity: green | yellow | red</text>
-  <text x="420" y="172" class="txt">code.text: observasjonsområde</text>
-  <text x="420" y="194" class="txt">note.text: anbefalt tiltak</text>
-  <text x="420" y="216" class="txt">subject -&gt; MalPatient</text>
+  <text x="420" y="150" class="txt">clinicalStatus: active</text>
+  <text x="420" y="172" class="txt">severity: green | yellow | red</text>
+  <text x="420" y="194" class="txt">code.text: observasjonsområde</text>
+  <text x="420" y="216" class="txt">note.text: anbefalt tiltak</text>
+  <text x="420" y="238" class="txt">subject -&gt; MalPatient</text>
 
   <rect x="760" y="90" width="280" height="110" class="box"/>
   <text x="780" y="122" class="head">MalPatient</text>

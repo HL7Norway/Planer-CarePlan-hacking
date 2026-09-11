@@ -14,6 +14,7 @@ class MalCarePlan {
 }
 
 class MalZoneCondition {
+  +clinicalStatus: active
   +severity: green|yellow|red
   +code.text: observasjonsområde
   +note.text: anbefalt tiltak
