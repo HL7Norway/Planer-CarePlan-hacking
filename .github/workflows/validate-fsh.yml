@@ -13,15 +13,15 @@ on:
         required: false
         default: false
         type: boolean
-  pull_request:
-    paths:
-      - 'planer-hacking/input/fsh/**'
-      - 'planer-hacking/sushi-config.yaml'
-  push:
-    branches: [main]
-    paths:
-      - 'planer-hacking/input/fsh/**'
-      - 'planer-hacking/sushi-config.yaml'
+#  pull_request:
+#    paths:
+#      - 'planer-hacking/input/fsh/**'
+#      - 'planer-hacking/sushi-config.yaml'
+#  push:
+#    branches: [main]
+#    paths:
+#      - 'planer-hacking/input/fsh/**'
+#      - 'planer-hacking/sushi-config.yaml'
 
 # CONFIGURATION: The "short name" of the IG and the folder must be the same
 env:

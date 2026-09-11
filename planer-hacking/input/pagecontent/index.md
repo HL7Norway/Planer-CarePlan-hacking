@@ -63,7 +63,9 @@ Denne modellen gjør sone-definisjoner eksplisitte og gjenbrukbare i standard FH
 
 #### PlantUML-modell for sonebeskrivelse
 
-<img src="images/careplan-zones-model.svg" alt="Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak" width="80%" />
+Modell der CarePlan adresserer sone-Condition med nivå, terskel og tiltak
+
+{% include careplan-zones-model.svg %}
 
 #### Eksempel (pasientplan med soner)
 
@@ -75,9 +77,3 @@ Et komplett eksempel er definert i FSH-instansene:
 - `ZoneCondition-Red-Oddfrid`
 
 Eksempelet viser samme prinsipp som i Pasientens planer API: hver sone modelleres med terskel i `PlanerHackingZoneCondition.code.text`, tiltak i `PlanerHackingZoneCondition.note.text` og nivå i `PlanerHackingZoneCondition.severity.coding[zoneSystem].code`, referert fra `CarePlan.addresses`.
-
-### Figur
-
-Eksempel på en figur laget med PlantUML.
-
-<img src="test.svg" alt="Eksempel på PlantUML-figur i implementasjonsguiden" width="40%" />
