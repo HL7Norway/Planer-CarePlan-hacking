@@ -18,6 +18,7 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med nivå (gr�
 * severity.coding ^slicing.discriminator[0].path = "system"
 * severity.coding ^slicing.rules = #open
 * severity.coding contains zoneSystem 1..1 MS
+* severity.coding[zoneSystem].system 1..1
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code from $mal-observation-severity-zone-vs (required)
 * severity.coding[zoneSystem].code 1..1
@@ -28,8 +29,8 @@ Description: "Condition-profil for sonegrenser i pasientens plan, med nivå (gr�
 Instance: ZoneCondition-Green-Oddfrid
 InstanceOf: MalZoneCondition
 Description: "Grønn sone for Oddfrid"
-* clinicalStatus.coding.system = $condition-clinical
-* clinicalStatus.coding.code = #active
+* clinicalStatus.coding[0].system = $condition-clinical
+* clinicalStatus.coding[0].code = #active
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #green
@@ -39,8 +40,8 @@ Description: "Grønn sone for Oddfrid"
 Instance: ZoneCondition-Yellow-Oddfrid
 InstanceOf: MalZoneCondition
 Description: "Gul sone for Oddfrid"
-* clinicalStatus.coding.system = $condition-clinical
-* clinicalStatus.coding.code = #active
+* clinicalStatus.coding[0].system = $condition-clinical
+* clinicalStatus.coding[0].code = #active
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #yellow
@@ -50,8 +51,8 @@ Description: "Gul sone for Oddfrid"
 Instance: ZoneCondition-Red-Oddfrid
 InstanceOf: MalZoneCondition
 Description: "Rød sone for Oddfrid"
-* clinicalStatus.coding.system = $condition-clinical
-* clinicalStatus.coding.code = #active
+* clinicalStatus.coding[0].system = $condition-clinical
+* clinicalStatus.coding[0].code = #active
 * subject = Reference(Pasient-1)
 * severity.coding[zoneSystem].system = $mal-observation-severity-zone-cs
 * severity.coding[zoneSystem].code = #red

@@ -20,11 +20,6 @@ class MalZoneCondition {
   +note.text: anbefalt tiltak
 }
 
-class MalObservationBlood {
-  +valueQuantity
-  +interpretation: green|yellow|red
-}
-
 MalCarePlan --> MalPatient : subject
 MalCarePlan --> "1..*" MalZoneCondition : addresses
 MalZoneCondition --> MalPatient : subject
@@ -32,8 +27,8 @@ MalZoneCondition --> MalPatient : subject
 note right of MalZoneCondition
 Eksempel:
 - code.text = "Peak flow 50-80%"
-- severity = yellow
-- note.text = "Increase medication dosage..."
+- severity.coding[zoneSystem].code = yellow
+- note.text = "Øk medikamentdose og kontakt fastlege"
 end note
 
 @enduml
