@@ -1,4 +1,4 @@
-# Sone-plan med tiltak (v2) - Planer CarePlan Hacking v0.3.0
+# Sone-plan med tiltak (v2) - Planer CarePlan Hacking v0.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan | *Version*:0.3.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan | *Version*:0.4.0 |
 | Draft as of 2026-09-11 | *Computable Name*:PlanerHackingV2ZoneCarePlan |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-v2-zo
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-v2-zone-careplan",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan",
-  "version" : "0.3.0",
+  "version" : "0.4.0",
   "name" : "PlanerHackingV2ZoneCarePlan",
   "title" : "Sone-plan med tiltak (v2)",
   "status" : "draft",

@@ -1,6 +1,6 @@
 {
-  "version" : "0.3.0",
-  "date" : "20260911093758",
+  "version" : "0.4.0",
+  "date" : "20260912134017",
   "notForPublication" : true,
   "name" : "hl7.fhir.no.planer-hacking.r4"
 }

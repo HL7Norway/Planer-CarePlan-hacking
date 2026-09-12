@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.planer-hacking</b></p><a name=\"hl7.fhir.no.planer-hacking\"> </a><a name=\"hchl7.fhir.no.planer-hacking\"> </a><h2>planerhacking</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking</pre><div><p>Implementasjonsguide for hacking på CarePlan ressurser.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking"] ;
-  fhir:ImplementationGuide.version [ fhir:value "0.3.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.4.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "planerhacking"] ;
   fhir:ImplementationGuide.title [ fhir:value "Planer CarePlan Hacking"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-11T09:37:58+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-12T13:40:17+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Norge"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -1043,13 +1043,23 @@
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "business-actors.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "business-actors.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Actors" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "planer-CarePlan-v1.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "planer-CarePlan-v1.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Planer Care Plan v 1" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 2 ;
+         fhir:index 3 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;

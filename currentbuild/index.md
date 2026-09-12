@@ -1,4 +1,4 @@
-# Home - Planer CarePlan Hacking v0.3.0
+# Home - Planer CarePlan Hacking v0.4.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.3.0 |
-| Draft as of 2026-09-11 | *Computable Name*:planerhacking |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking | *Version*:0.4.0 |
+| Draft as of 2026-09-12 | *Computable Name*:planerhacking |
 
 ### Tittel
 
@@ -56,11 +56,11 @@ Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer AP
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.no.planer-hacking",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking",
-  "version" : "0.3.0",
+  "version" : "0.4.0",
   "name" : "planerhacking",
   "title" : "Planer CarePlan Hacking",
   "status" : "draft",
-  "date" : "2026-09-11T09:37:58+00:00",
+  "date" : "2026-09-12T13:40:17+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -1012,6 +1012,15 @@ Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer AP
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "business-actors.html"
+        }],
+        "nameUrl" : "business-actors.html",
+        "title" : "Business Actors",
         "generation" : "markdown"
       },
       {

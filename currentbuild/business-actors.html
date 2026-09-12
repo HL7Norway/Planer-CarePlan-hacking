@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Business Actors - Planer CarePlan Hacking v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            
+<div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" height="50" src="assets/images/fhir-logo-www.png" />
+	</a>
+</div>
+
+
+            
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="https://github.com/HL7Norway">
+        <img alt="visit the hl7 website" height="60" src="assets/images/HL7-norway-logo.png" />
+    </a>            
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Planer CarePlan Hacking</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - ci-build
+
+
+
+  <img alt="Norway flag" src="assets/images/nor.svg" height="16" title="Norway"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="business-actors.html">Business actors</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CarePlan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="planer-CarePlan-v1.html">Careplan v1</a>
+      </li>
+      <li>
+        <a href="planer-CarePlan-v2.html">CarePlan v2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">TOC</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Business Actors</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Planer CarePlan Hacking - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/planer-hacking/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Business Actors</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h2 id="forretningsaktører-og-mål">Forretningsaktører og mål</h2>
+
+<p>De viktigste aktørene og deres mål i forbindelse med egenbehandlingsplan.</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="668px" preserveAspectRatio="none" style="width:436px;height:668px;background:#FFFFFF;" version="1.1" viewBox="0 0 436 668" width="436px" zoomAndPan="magnify"><title>Akt&#248;rer og bruksm&#229;l</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="162.5176" x="129.9942" y="22.9951">Akt&#248;rer og bruksm&#229;l</text><!--entity Patient--><g class="entity" data-entity="Patient" data-source-line="3" data-uid="ent0002" id="entity_Patient"><ellipse cx="47.0903" cy="51.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.0903,59.2969 L47.0903,86.2969 M34.0903,67.2969 L60.0903,67.2969 M47.0903,86.2969 L34.0903,101.2969 M47.0903,86.2969 L60.0903,101.2969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51.1807" x="21.5" y="115.792">Pasient</text></g><g class="entity" data-entity="UC1" data-source-line="4" data-uid="ent0003" id="entity_UC1"><ellipse cx="248.2416" cy="80.8678" fill="#F1F1F1" rx="140.2416" ry="37.5709" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129.418" x="183.5326" y="67.4176">Delta aktivt i egen</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161.9844" x="167.2494" y="83.7144">oppf&#248;lging gjennom en</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182.0889" x="157.1971" y="100.0113">delt egenbehandlingsplan</text></g><!--entity GP--><g class="entity" data-entity="GP" data-source-line="7" data-uid="ent0005" id="entity_GP"><ellipse cx="47.209" cy="187.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.209,195.2969 L47.209,222.2969 M34.209,203.2969 L60.209,203.2969 M47.209,222.2969 L34.209,237.2969 M47.209,222.2969 L60.209,237.2969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59.418" x="17.5" y="251.792">Fastlege</text></g><g class="entity" data-entity="UC2" data-source-line="8" data-uid="ent0006" id="entity_UC2"><ellipse cx="239.8886" cy="216.9381" fill="#F1F1F1" rx="127.8886" ry="37.6412" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164.2607" x="154.7582" y="204.3887">F&#248;lge opp pasienten og</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106.9824" x="183.3974" y="220.6856">bidra til en delt</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150.7598" x="161.5087" y="236.9825">egenbehandlingsplan</text></g><!--entity Specialist--><g class="entity" data-entity="Specialist" data-source-line="11" data-uid="ent0008" id="entity_Specialist"><ellipse cx="46.856" cy="323.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M46.856,331.2969 L46.856,358.2969 M33.856,339.2969 L59.856,339.2969 M46.856,358.2969 L33.856,373.2969 M46.856,358.2969 L59.856,373.2969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66.7119" x="13.5" y="387.792">Spesialist</text></g><g class="entity" data-entity="UC3" data-source-line="12" data-uid="ent0009" id="entity_UC3"><ellipse cx="262.0987" cy="353.0093" fill="#F1F1F1" rx="146.0987" ry="37.7124" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189.5469" x="164.3252" y="340.46">Bidra med spesialistfaglige</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143.7939" x="187.2017" y="356.7569">vurderinger i en delt</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150.7598" x="183.7188" y="373.0537">egenbehandlingsplan</text></g><!--entity Nurse--><g class="entity" data-entity="Nurse" data-source-line="15" data-uid="ent0011" id="entity_Nurse"><ellipse cx="46.7705" cy="459.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M46.7705,467.2969 L46.7705,494.2969 M33.7705,475.2969 L59.7705,475.2969 M46.7705,494.2969 L33.7705,509.2969 M46.7705,494.2969 L59.7705,509.2969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73.541" x="10" y="523.792">Sykepleier</text></g><g class="entity" data-entity="UC4" data-source-line="16" data-uid="ent0012" id="entity_UC4"><ellipse cx="274.753" cy="488.8678" fill="#F1F1F1" rx="155.753" ry="37.5709" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183.3398" x="183.0831" y="475.4176">Underst&#248;tte oppf&#248;lging av</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159.2637" x="195.1212" y="491.7144">pasienten ved hjelp av</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204.0254" x="172.7403" y="508.0113">en delt egenbehandlingsplan</text></g><!--entity Coordinator--><g class="entity" data-entity="Coordinator" data-source-line="19" data-uid="ent0014" id="entity_Coordinator"><ellipse cx="47.0532" cy="595.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M47.0532,603.2969 L47.0532,630.2969 M34.0532,611.2969 L60.0532,611.2969 M47.0532,630.2969 L34.0532,645.2969 M47.0532,630.2969 L60.0532,645.2969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.1064" x="6" y="659.792">Koordinator</text></g><g class="entity" data-entity="UC5" data-source-line="20" data-uid="ent0015" id="entity_UC5"><ellipse cx="260.7865" cy="624.9772" fill="#F1F1F1" rx="137.2865" ry="37.6803" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177.3105" x="169.1312" y="612.4279">Koordinere oppf&#248;lging og</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173.3799" x="171.0965" y="628.7247">samhandling p&#229; tvers av</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170.0986" x="172.7371" y="645.0216">akt&#248;rer og virksomheter</text></g><!--link Patient to UC1--><g class="link" data-entity-1="Patient" data-entity-2="UC1" data-source-line="5" data-uid="lnk4" id="link_Patient_UC1"><path d="M72.52,80.7969 C84.28,80.7969 90.05,80.7969 101.82,80.7969" fill="none" id="Patient-to-UC1" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="107.82,80.7969,98.82,76.7969,102.82,80.7969,98.82,84.7969,107.82,80.7969" style="stroke:#181818;stroke-width:1;" /></g><!--link GP to UC2--><g class="link" data-entity-1="GP" data-entity-2="UC2" data-source-line="9" data-uid="lnk7" id="link_GP_UC2"><path d="M76.78,216.7969 C88.47,216.7969 94.16,216.7969 105.85,216.7969" fill="none" id="GP-to-UC2" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="111.85,216.7969,102.85,212.7969,106.85,216.7969,102.85,220.7969,111.85,216.7969" style="stroke:#181818;stroke-width:1;" /></g><!--link Specialist to UC3--><g class="link" data-entity-1="Specialist" data-entity-2="UC3" data-source-line="13" data-uid="lnk10" id="link_Specialist_UC3"><path d="M80.59,352.7969 C92.29,352.7969 97.98,352.7969 109.67,352.7969" fill="none" id="Specialist-to-UC3" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="115.67,352.7969,106.67,348.7969,110.67,352.7969,106.67,356.7969,115.67,352.7969" style="stroke:#181818;stroke-width:1;" /></g><!--link Nurse to UC4--><g class="link" data-entity-1="Nurse" data-entity-2="UC4" data-source-line="17" data-uid="lnk13" id="link_Nurse_UC4"><path d="M84.41,488.7969 C95.82,488.7969 101.24,488.7969 112.65,488.7969" fill="none" id="Nurse-to-UC4" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="118.65,488.7969,109.65,484.7969,113.65,488.7969,109.65,492.7969,118.65,488.7969" style="stroke:#181818;stroke-width:1;" /></g><!--link Coordinator to UC5--><g class="link" data-entity-1="Coordinator" data-entity-2="UC5" data-source-line="21" data-uid="lnk16" id="link_Coordinator_UC5"><path d="M88.38,624.7969 C100.07,624.7969 105.75,624.7969 117.44,624.7969" fill="none" id="Coordinator-to-UC5" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="123.44,624.7969,114.44,620.7969,118.44,624.7969,114.44,628.7969,123.44,624.7969" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to GP--><!--link GP to Specialist--><!--link Specialist to Nurse--><!--link Nurse to Coordinator--></g></svg>
+
+<h2 id="use-cases-for-pasient">Use cases for pasient</h2>
+
+<p>Viktige brukstilfeller for pasienten.</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="616px" preserveAspectRatio="none" style="width:371px;height:616px;background:#FFFFFF;" version="1.1" viewBox="0 0 371 616" width="371px" zoomAndPan="magnify"><title>Pasientens brukstilfeller</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="194.0723" x="81.4639" y="22.9951">Pasientens brukstilfeller</text><!--cluster Delt egenbehandlingsplan--><g class="cluster" data-entity="Delt egenbehandlingsplan" data-source-line="9" data-uid="ent0003" id="cluster_Delt egenbehandlingsplan"><rect fill="none" height="566" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1;" width="261" x="104" y="44.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="207.5322" x="130.7339" y="59.292">Delt egenbehandlingsplan</text></g><g class="entity" data-entity="UC_View" data-source-line="11" data-uid="ent0004" id="entity_UC_View"><ellipse cx="234.3495" cy="209.3441" fill="#F1F1F1" rx="93.3495" ry="26.0473" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56.9365" x="205.8812" y="204.0424">Se egen</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115.7734" x="176.4627" y="220.3393">behandlingsplan</text></g><g class="entity" data-entity="UC_Follow" data-source-line="13" data-uid="ent0005" id="entity_UC_Follow"><ellipse cx="234.7362" cy="105.3441" fill="#F1F1F1" rx="106.2362" ry="26.0473" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108.9102" x="180.2811" y="100.0424">F&#248;lge anbefalte</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133.998" x="167.7372" y="116.3393">tiltak og aktiviteter</text></g><g class="entity" data-entity="UC_Measure" data-source-line="15" data-uid="ent0006" id="entity_UC_Measure"><ellipse cx="234.4507" cy="313.5182" fill="#F1F1F1" rx="103.4507" ry="26.2213" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128.9941" x="166.9536" y="309.1173">Registrere og dele</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109.8604" x="176.5205" y="325.4141">m&#229;linger/status</text></g><g class="entity" data-entity="UC_Updates" data-source-line="17" data-uid="ent0007" id="entity_UC_Updates"><ellipse cx="234.599" cy="401.0639" fill="#F1F1F1" rx="114.599" ry="26.2671" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144.334" x="159.4321" y="396.6631">Motta oppdateringer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56.0547" x="203.5717" y="412.9599">i planen</text></g><g class="entity" data-entity="UC_Publisher" data-source-line="19" data-uid="ent0008" id="entity_UC_Publisher"><ellipse cx="234.569" cy="489.4973" fill="#F1F1F1" rx="99.069" ry="26.2005" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122.9648" x="170.0865" y="485.0965">Se hvem som har</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79.0439" x="192.047" y="501.3933">delt planen</text></g><g class="entity" data-entity="UC_Training" data-source-line="21" data-uid="ent0009" id="entity_UC_Training"><ellipse cx="234.4974" cy="572.1964" fill="#F1F1F1" rx="94.9974" ry="21.3995" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152.9678" x="158.0135" y="575.043">F&#229; oppl&#230;ring i planen</text></g><!--entity Patient--><g class="entity" data-entity="Patient" data-source-line="7" data-uid="ent0002" id="entity_Patient"><ellipse cx="31.5903" cy="339.7969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M31.5903,347.7969 L31.5903,374.7969 M18.5903,355.7969 L44.5903,355.7969 M31.5903,374.7969 L18.5903,389.7969 M31.5903,374.7969 L44.5903,389.7969" fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51.1807" x="6" y="404.292">Pasient</text></g><!--link Patient to UC_View--><g class="link" data-entity-1="Patient" data-entity-2="UC_View" data-source-line="25" data-uid="lnk10" id="link_Patient_UC_View"><path d="M49.77,331.1669 C60.63,310.6369 76.32,286.1569 96,269.2969 C117.17,251.1669 139.0584,239.8668 163.8884,230.3368" fill="none" id="Patient-to-UC_View" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="169.49,228.1869,159.6543,227.6774,164.822,229.9785,162.5209,235.1462,169.49,228.1869" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to UC_Follow--><g class="link" data-entity-1="Patient" data-entity-2="UC_Follow" data-source-line="26" data-uid="lnk11" id="link_Patient_UC_Follow"><path d="M34.98,331.2069 C39.81,286.3769 54.05,212.1269 96,165.2969 C113.03,146.2869 131.5813,135.2201 154.9013,126.1101" fill="none" id="Patient-to-UC_Follow" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="160.49,123.9269,150.6515,123.4759,155.8328,125.7462,153.5624,130.9275,160.49,123.9269" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to UC_Measure--><g class="link" data-entity-1="Patient" data-entity-2="UC_Measure" data-source-line="27" data-uid="lnk12" id="link_Patient_UC_Measure"><path d="M57.12,361.3769 C66.45,358.4369 77.19,355.1269 87,352.2969 C111.15,345.3169 131.8692,339.6501 155.6292,333.3701" fill="none" id="Patient-to-UC_Measure" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="161.43,331.8369,151.7067,330.2695,156.596,333.1145,153.7509,338.0039,161.43,331.8369" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to UC_Updates--><g class="link" data-entity-1="Patient" data-entity-2="UC_Updates" data-source-line="28" data-uid="lnk13" id="link_Patient_UC_Updates"><path d="M57.15,373.2169 C78.01,376.5369 103.3643,380.5853 133.8243,385.4253" fill="none" id="Patient-to-UC_Updates" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="139.75,386.3669,131.4892,381.0041,134.8119,385.5822,130.2338,388.905,139.75,386.3669" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to UC_Publisher--><g class="link" data-entity-1="Patient" data-entity-2="UC_Publisher" data-source-line="29" data-uid="lnk14" id="link_Patient_UC_Publisher"><path d="M57.08,406.9069 C67.65,420.6269 81.02,435.2169 96,445.2969 C114.2,457.5369 130.2968,464.7553 151.1368,471.3153" fill="none" id="Patient-to-UC_Publisher" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="156.86,473.1169,149.4763,466.5991,152.0907,471.6156,147.0742,474.23,156.86,473.1169" style="stroke:#181818;stroke-width:1;" /></g><!--link Patient to UC_Training--><g class="link" data-entity-1="Patient" data-entity-2="UC_Training" data-source-line="30" data-uid="lnk15" id="link_Patient_UC_Training"><path d="M37.53,407.3769 C44.41,444.3669 60.27,499.5869 96,532.2969 C111.5,546.4769 125.9834,553.9653 146.1634,559.8953" fill="none" id="Patient-to-UC_Training" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="151.92,561.5869,144.4128,555.2117,147.1228,560.1772,142.1574,562.8872,151.92,561.5869" style="stroke:#181818;stroke-width:1;" /></g><!--link UC_Follow to UC_View--><g class="link" data-entity-1="UC_Follow" data-entity-2="UC_View" data-source-line="32" data-uid="lnk16" id="link_UC_Follow_UC_View"><path d="M234.5,131.5369 C234.5,147.2969 234.5,161.2869 234.5,177.0569" fill="none" id="UC_Follow-to-UC_View" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="234.5,183.0569,238.5,174.0569,234.5,178.0569,230.5,174.0569,234.5,183.0569" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63.0068" x="191.5" y="161.8638">&#171;include&#187;</text></g><!--link UC_Measure to UC_View--><g class="link" data-entity-1="UC_Measure" data-entity-2="UC_View" data-source-line="33" data-uid="lnk17" id="link_UC_Measure_UC_View"><path d="M234.5,287.0569 C234.5,271.2869 234.5,257.2969 234.5,241.5369" fill="none" id="UC_Measure-to-UC_View" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="234.5,235.5369,230.5,244.5369,234.5,240.5369,238.5,244.5369,234.5,235.5369" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63.0068" x="191.5" y="265.8638">&#171;include&#187;</text></g></g></svg>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.no">HL7 Norge</a>.  Package hl7.fhir.no.planer-hacking#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 12, 2026 13:40+0000">2026-09-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

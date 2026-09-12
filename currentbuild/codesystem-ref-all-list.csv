@@ -1,5 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs,0.3.0,draft,,PlanerHackingObservationSeverityZoneCS,Vurderingssone for observasjon,"Kodeverk for tre nivåer av alvorlighetsgrad ved vurdering av observasjoner i planer.","ValueSet/planer-hacking-observation-severity-zone-vs"
+http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs,0.4.0,draft,,PlanerHackingObservationSeverityZoneCS,Vurderingssone for observasjon,"Kodeverk for tre nivåer av alvorlighetsgrad ved vurdering av observasjoner i planer.","ValueSet/planer-hacking-observation-severity-zone-vs"
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
 http://hl7.org/fhir/care-plan-activity-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.147",CarePlanActivityStatus,CarePlanActivityStatus,"Codes that reflect the current state of a care plan activity within its overall life cycle.","ValueSet/care-plan-activity-status"
 http://hl7.org/fhir/identifier-use,4.0.1,active,"2.16.840.1.113883.4.642.4.58",IdentifierUse,IdentifierUse,"Identifies the purpose for this identifier, if known .","ValueSet/identifier-use"

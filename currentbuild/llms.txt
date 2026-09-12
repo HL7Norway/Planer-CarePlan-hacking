@@ -1,10 +1,11 @@
-# hl7.fhir.no.planer-hacking#0.3.0: Planer CarePlan Hacking
+# hl7.fhir.no.planer-hacking#0.4.0: Planer CarePlan Hacking
 
 ## Pages
 
 * [Home](index.md)
 * [Planer Care Plan v 1](planer-CarePlan-v1.md)
 * [Artifacts Summary](artifacts.md)
+* [Business Actors](business-actors.md)
 * [Planer Care Plan v 2](planer-CarePlan-v2.md)
 
 ## Resources

@@ -3,10 +3,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="planer-hacking-observation-severity-zone-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet planer-hacking-observation-severity-zone-vs</b></p><a name="planer-hacking-observation-severity-zone-vs"> </a><a name="hcplaner-hacking-observation-severity-zone-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-planer-hacking-observation-severity-zone-cs.html"><code>http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.3.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet planer-hacking-observation-severity-zone-vs</b></p><a name="planer-hacking-observation-severity-zone-vs"> </a><a name="hcplaner-hacking-observation-severity-zone-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-planer-hacking-observation-severity-zone-cs.html"><code>http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.4.0</span></li></ul></div>
   </text>
   <url value="http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs"/>
-  <version value="0.3.0"/>
+  <version value="0.4.0"/>
   <name value="PlanerHackingObservationSeverityZoneVS"/>
   <title value="Vurderingssone for observasjon (ValueSet)"/>
   <status value="draft"/>
