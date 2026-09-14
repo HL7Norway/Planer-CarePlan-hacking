@@ -1,4 +1,4 @@
-# Vurderingssone for observasjon - Planer CarePlan Hacking v0.4.0
+# Vurderingssone for observasjon - Planer CarePlan Hacking v0.4.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs | *Version*:0.4.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs | *Version*:0.4.1 |
 | Draft as of 2026-09-10 | *Computable Name*:PlanerHackingObservationSeverityZoneCS |
 
  
@@ -27,7 +27,7 @@ Kodeverk for tre nivåer av alvorlighetsgrad ved vurdering av observasjoner i pl
   "resourceType" : "CodeSystem",
   "id" : "planer-hacking-observation-severity-zone-cs",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingObservationSeverityZoneCS",
   "title" : "Vurderingssone for observasjon",
   "status" : "draft",

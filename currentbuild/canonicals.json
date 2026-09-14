@@ -2,69 +2,69 @@
   "id" : "planer-hacking-observation-severity-zone-cs",
   "type" : "CodeSystem",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingObservationSeverityZoneCS"
 },
 {
   "id" : "hl7.fhir.no.planer-hacking",
   "type" : "ImplementationGuide",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "planerhacking"
 },
 {
   "id" : "planer-hacking-careplan",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-careplan",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingCarePlan"
 },
 {
   "id" : "planer-hacking-observation-blodprove",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-observation-blodprove",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingObservationBlood"
 },
 {
   "id" : "planer-hacking-patient",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-patient",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingPatient"
 },
 {
   "id" : "planer-hacking-v2-careplan",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingV2CarePlan"
 },
 {
   "id" : "planer-hacking-v2-zone-careplan",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-careplan",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingV2ZoneCarePlan"
 },
 {
   "id" : "planer-hacking-v2-zone-condition",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-zone-condition",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingV2ZoneCondition"
 },
 {
   "id" : "planer-hacking-zone-condition",
   "type" : "StructureDefinition",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-zone-condition",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingZoneCondition"
 },
 {
   "id" : "planer-hacking-observation-severity-zone-vs",
   "type" : "ValueSet",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingObservationSeverityZoneVS"
 }]

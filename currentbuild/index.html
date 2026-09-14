@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - Planer CarePlan Hacking v0.4.0</title>
+    <title>Home - Planer CarePlan Hacking v0.4.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -69,7 +69,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Planer CarePlan Hacking</span>
             <br/>
-            <span style="display:inline-block;">0.4.0 - ci-build
+            <span style="display:inline-block;">0.4.1 - ci-build
 
 
 
@@ -164,7 +164,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Planer CarePlan Hacking - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/planer-hacking/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Planer CarePlan Hacking - Local Development build (v0.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/planer-hacking/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -179,7 +179,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking|0.4.0"/></span>
+      <span class="copy-text">0.4.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking|0.4.1"/></span>
       </td>
     </tr>
 
@@ -195,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-09-12
+            as of 2026-09-14
           
         
       </td>
@@ -221,7 +221,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#tittel" id="markdown-toc-tittel">Tittel</a></li>
+  <li><a href="#egenbehandlignsplan-med-fhir" id="markdown-toc-egenbehandlignsplan-med-fhir">Egenbehandlignsplan med FHIR</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
   <li><a href="#mål" id="markdown-toc-mål">Mål</a></li>
   <li><a href="#omfang" id="markdown-toc-omfang">Omfang</a></li>
   <li><a href="#brukstilfeller" id="markdown-toc-brukstilfeller">Brukstilfeller</a></li>
@@ -229,13 +230,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="tittel">Tittel</h3>
+<h3 id="egenbehandlignsplan-med-fhir">Egenbehandlignsplan med FHIR</h3>
 
-<p>Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)</p>
+<p>Eksempler på hvordan FHIR CarePlan kan benyttes for å modellere Pasientens planer (egenbehandlignsplan).</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+
+<p><strong>NOT FOR CLINICAL USE</strong></p>
+
+<p>This implementation guide is a demonstration project developed for the <a href="https://hl7norway.github.io/Norwegian-FHIR-Hackathon-2026/currentbuild/index.html">Norwegian FHIR Hackathon in Oslo, November 2026</a>. This IG is purely for testing/demonstration purposes.</p>
+
+<p><strong>This software:</strong></p>
+
+<ul>
+  <li>Is NOT validated for clinical use</li>
+  <li>Is NOT approved or certified by any regulatory authority</li>
+  <li>Should NOT be used for any real healthcare decision-making</li>
+  <li>Should NOT be used in production clinical environments</li>
+  <li>Is provided "AS IS" without warranty of any kind</li>
+</ul>
+
+<p>Healthcare professionals must rely on their clinical judgment and validated, approved systems for patient care decisions. The developers assume no liability for any consequences resulting from the use or misuse of this software.</p>
 
 <h3 id="mål">Mål</h3>
 
-<p>Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.</p>
+<p>Målet er å utforske løsningsforslag på hvordan FHIR CarePlan kan benyttes for å utveksle og samarbeide om egenbehandlingsplaner for pasient.</p>
 
 <h3 id="omfang">Omfang</h3>
 
@@ -246,18 +265,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Kliniske observasjoner</li>
   <li>Medisinsk historikk</li>
   <li>Behandlingsplaner</li>
-  <li>Laboratorieresultater</li>
 </ul>
 
 <h3 id="brukstilfeller">Brukstilfeller</h3>
 
-<h4 id="pasientregistrering">Pasientregistrering</h4>
-
-<p>Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR <code class="language-plaintext highlighter-rouge">Patient</code>-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.</p>
-
 <h4 id="kliniske-observasjoner">Kliniske observasjoner</h4>
 
-<p>Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR <code class="language-plaintext highlighter-rouge">Observation</code>-ressursen.</p>
+<p>Guiden viser ikke hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR <code class="language-plaintext highlighter-rouge">Observation</code>-ressursen, det henvises til egen dokumentasjon for Pasientens måledata.</p>
 
 <h3 id="kombinert-forretnings--og-applikasjonsbeskrivelse-xshare--planer">Kombinert forretnings- og applikasjonsbeskrivelse (xShare + Planer)</h3>
 
@@ -268,7 +282,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Applikasjon:</strong> Pasient- og fagapplikasjoner henter, oppdaterer og deler planinnhold via journalsystemet som kilde for sannhet.</li>
 </ul>
 
-<p>Profilene i guiden er samtidig tilpasset planinnhold slik det brukes i Planer API, med fokus på maskinlesbar oppfølging av observasjoner i plan.</p>
+<p>Profilene i guiden er samtidig tilpasset for å inneholde informasjon om egenbahandlingplaner slik det brukes i prototype på Planer API fra NHN, med fokus på maskinlesbar oppfølging av observasjoner i plan.</p>
 
 
 
@@ -289,7 +303,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.no">HL7 Norge</a>.  Package hl7.fhir.no.planer-hacking#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 12, 2026 13:40+0000">2026-09-12</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.no">HL7 Norge</a>.  Package hl7.fhir.no.planer-hacking#0.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 14, 2026 07:56+0000">2026-09-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

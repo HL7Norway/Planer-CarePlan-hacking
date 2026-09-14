@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.no/fhir/ig/planer-hacking/ValueSet/planer-hacking-observation-severity-zone-vs",
-    "version" : "0.4.0",
+    "version" : "0.4.1",
     "status" : "draft",
     "name" : "PlanerHackingObservationSeverityZoneVS",
     "title" : "Vurderingssone for observasjon (ValueSet)",
@@ -9,7 +9,7 @@
     "systems" : ["http://hl7.no/fhir/ig/planer-hacking/CodeSystem/planer-hacking-observation-severity-zone-cs"],
     "uses" : {
     },
-    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)",
-    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan"
+    "StructureDefinition-planer-hacking-zone-condition.html" : "Sonebetingelse i plan",
+    "StructureDefinition-planer-hacking-v2-zone-condition.html" : "Sonebetingelse i plan (v2)"
   }]
 }

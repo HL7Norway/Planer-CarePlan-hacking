@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.planer-hacking</b></p><a name=\"hl7.fhir.no.planer-hacking\"> </a><a name=\"hchl7.fhir.no.planer-hacking\"> </a><h2>planerhacking</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking</pre><div><p>Implementasjonsguide for hacking på CarePlan ressurser.</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/planer-hacking/ImplementationGuide/hl7.fhir.no.planer-hacking",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "planerhacking",
   "title" : "Planer CarePlan Hacking",
   "status" : "draft",
-  "date" : "2026-09-12T13:40:17+00:00",
+  "date" : "2026-09-14T07:56:07+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",

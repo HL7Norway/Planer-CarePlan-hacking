@@ -1,4 +1,4 @@
-# Plan (v2, overordnet) - Planer CarePlan Hacking v0.4.0
+# Plan (v2, overordnet) - Planer CarePlan Hacking v0.4.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan | *Version*:0.4.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan | *Version*:0.4.1 |
 | Draft as of 2026-09-11 | *Computable Name*:PlanerHackingV2CarePlan |
 
  
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-v2-ca
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-v2-careplan",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-v2-careplan",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingV2CarePlan",
   "title" : "Plan (v2, overordnet)",
   "status" : "draft",

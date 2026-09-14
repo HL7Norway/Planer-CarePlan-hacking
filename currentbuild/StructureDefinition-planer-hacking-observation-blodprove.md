@@ -1,4 +1,4 @@
-# Blodprøve - Planer CarePlan Hacking v0.4.0
+# Blodprøve - Planer CarePlan Hacking v0.4.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-observation-blodprove | *Version*:0.4.0 |
+| *Official URL*:http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-observation-blodprove | *Version*:0.4.1 |
 | Draft as of 2025-01-31 | *Computable Name*:PlanerHackingObservationBlood |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-planer-hacking-obser
   "resourceType" : "StructureDefinition",
   "id" : "planer-hacking-observation-blodprove",
   "url" : "http://hl7.no/fhir/ig/planer-hacking/StructureDefinition/planer-hacking-observation-blodprove",
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "name" : "PlanerHackingObservationBlood",
   "title" : "Blodprøve",
   "status" : "draft",

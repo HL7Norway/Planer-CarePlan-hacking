@@ -3,7 +3,7 @@ planerhacking : Validation Results
 
 err = 3, warn = 16, info = 30
 IG Publisher Version: 2.3.4
-Generated Sat Sep 12 13:41:58 UTC 2026. FHIR version 4.0.1 for hl7.fhir.no.planer-hacking#0.4.0 (canonical = http://hl7.no/fhir/ig/planer-hacking)
+Generated Mon Sep 14 07:59:27 UTC 2026. FHIR version 4.0.1 for hl7.fhir.no.planer-hacking#0.4.1 (canonical = http://hl7.no/fhir/ig/planer-hacking)
  Build Errors : 0 / 5 / 0
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/CarePlan-CarePlan-Oddfrid-Green-V2 : 0 / 0 / 1
  /__w/Planer-CarePlan-hacking/Planer-CarePlan-hacking/planer-hacking/fsh-generated/resources/CarePlan-CarePlan-Oddfrid-Red-V2 : 0 / 0 / 1

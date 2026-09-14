@@ -1,7 +1,7 @@
 {
-  "version" : "0.4.0",
+  "version" : "0.4.1",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260912134017",
+  "date" : "20260914075607",
   "name" : "hl7.fhir.no.planer-hacking",
   "jurisdiction" : "urn:iso:std:iso:3166#NO"
 }
