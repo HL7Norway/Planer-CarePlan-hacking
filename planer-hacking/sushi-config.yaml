@@ -9,7 +9,7 @@ name: planer-hacking
 title: "Planer CarePlan Hacking"
 description: Implementasjonsguide for hacking på CarePlan ressurser.
 status: draft
-version: 0.3.1
+version: 0.4.1
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: ci-build
@@ -26,6 +26,8 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Business:
+    Business actors: business-actors.html
   CarePlan:
     Careplan v1: planer-CarePlan-v1.html
     CarePlan v2: planer-CarePlan-v2.html

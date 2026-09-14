@@ -1,0 +1,36 @@
+@startuml
+title Pasientens brukstilfeller
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor "Pasient" as Patient
+
+rectangle "Delt egenbehandlingsplan" {
+
+  usecase "Se egen\nbehandlingsplan" as UC_View
+
+  usecase "Følge anbefalte\ntiltak og aktiviteter" as UC_Follow
+
+  usecase "Registrere og dele\nmålinger/status" as UC_Measure
+
+  usecase "Motta oppdateringer\ni planen" as UC_Updates
+
+  usecase "Se hvem som har\ndelt planen" as UC_Publisher
+
+  usecase "Få opplæring i planen" as UC_Training
+
+}
+
+Patient --> UC_View
+Patient --> UC_Follow
+Patient --> UC_Measure
+Patient --> UC_Updates
+Patient --> UC_Publisher
+Patient --> UC_Training
+
+UC_Follow .> UC_View : <<include>>
+UC_Measure .> UC_View : <<include>>
+
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+title Aktører og bruksmål
+
+actor "Pasient" as Patient
+usecase "Delta aktivt i egen\noppfølging gjennom en\ndelt egenbehandlingsplan" as UC1
+Patient -right-> UC1
+
+actor "Fastlege" as GP
+usecase "Følge opp pasienten og\nbidra til en delt\negenbehandlingsplan" as UC2
+GP -right-> UC2
+
+actor "Spesialist" as Specialist
+usecase "Bidra med spesialistfaglige\nvurderinger i en delt\negenbehandlingsplan" as UC3
+Specialist -right-> UC3
+
+actor "Sykepleier" as Nurse
+usecase "Understøtte oppfølging av\npasienten ved hjelp av\nen delt egenbehandlingsplan" as UC4
+Nurse -right-> UC4
+
+actor "Koordinator" as Coordinator
+usecase "Koordinere oppfølging og\nsamhandling på tvers av\naktører og virksomheter" as UC5
+Coordinator -right-> UC5
+
+Patient -[hidden]down-> GP
+GP -[hidden]down-> Specialist
+Specialist -[hidden]down-> Nurse
+Nurse -[hidden]down-> Coordinator
+
+@enduml
